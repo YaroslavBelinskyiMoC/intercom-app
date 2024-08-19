@@ -5,5 +5,3 @@ node_modules
 .env
 dist
 redis_data
-package.json
-package-lock.json
