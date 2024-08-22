@@ -9,11 +9,5 @@ export const databaseConfig = {
     username: cfg.DB_USERNAME,
     password: cfg.DB_PASSWORD,
     database: cfg.DB_DATABASE,
-    ssl:
-      cfg.NODE_ENV === "local"
-        ? false
-        : {
-            rejectUnauthorized: false,
-          },
   } as DataSourceOptions,
 };

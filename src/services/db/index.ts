@@ -37,7 +37,9 @@ class DatabaseHandler {
             await queryRunner.manager.query(`DROP TABLE IF EXISTS documents ;`);
 
             const embeddings = new OpenAIEmbeddings({
-                openAIApiKey: cfg.OPENAI_API_KEY,
+                apiKey: cfg.OPENAI_API_KEY,
+                batchSize: 512, // Default value if omitted is 512. Max is 2048
+                model: "text-embedding-3-large",
             });
 
             const typeormVectorStore = await TypeORMVectorStore.fromDataSource(
@@ -57,7 +59,9 @@ class DatabaseHandler {
     public async search(param: string): Promise<any[]> {
         try {
             const embeddings = new OpenAIEmbeddings({
-                openAIApiKey: cfg.OPENAI_API_KEY,
+                apiKey: cfg.OPENAI_API_KEY,
+                batchSize: 512, // Default value if omitted is 512. Max is 2048
+                model: "text-embedding-3-large",
             });
 
             const typeormVectorStore = await TypeORMVectorStore.fromDataSource(
@@ -67,21 +71,13 @@ class DatabaseHandler {
 
             log.info("Running search");
 
-            const products: any[] = [];
-
             const results = await typeormVectorStore.similaritySearchWithScore(
                 param,
                 30,
             );
-            log.info(`FOUND ${results.length} PRODUCTS`);
+            log.info(results);
 
-            results.forEach((result) => {
-                const product = result[0].metadata;
-                product.score = result[1];
-                products.push(product);
-            });
-
-            return products;
+            return results;
         } catch (err) {
             log.error(err);
             return [];

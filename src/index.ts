@@ -1,5 +1,6 @@
 import express, { Application } from 'express';
 import bodyParser from "body-parser";
+import cors from 'cors';
 
 import 'dotenv/config'
 
@@ -11,6 +12,7 @@ const log = logger(__filename);
 
 const server: Application = express();
 
+server.use(cors());
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: true }));
 
