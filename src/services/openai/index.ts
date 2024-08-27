@@ -2,7 +2,7 @@ import OpenAI from 'openai';
 
 import { logger } from '../../logger';
 import { cfg } from '../../config/env';
-import article from '../../mock/mock_article'
+import article from '../../dataFiles/mock_article'
 
 const log = logger(__filename);
 

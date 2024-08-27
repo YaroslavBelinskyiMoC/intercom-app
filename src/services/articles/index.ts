@@ -1,6 +1,6 @@
 import { dbClient } from "../db";
 import { logger } from "../../logger";
-import articles from "../../mock/mock_article";
+import articles from "../../dataFiles/output";
 
 const log = logger(__filename);
 

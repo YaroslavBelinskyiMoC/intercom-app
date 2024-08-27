@@ -1,4 +1,4 @@
-import articles from '../mock/mock_article'
+import articles from '../dataFiles/mock_article'
 
 const initialCanvas = {
   canvas: {
