@@ -4,6 +4,7 @@ import { TypeORMVectorStore } from "@langchain/community/vectorstores/typeorm";
 import { databaseConfig } from "./config";
 import { cfg } from "../../config/env";
 import { logger } from "../../logger";
+import getFormattedAnswer from "../openai";
 
 const log = logger(__filename);
 
@@ -76,6 +77,8 @@ class DatabaseHandler {
                 30,
             );
             log.info(results);
+
+            await getFormattedAnswer(param);
 
             return results;
         } catch (err) {

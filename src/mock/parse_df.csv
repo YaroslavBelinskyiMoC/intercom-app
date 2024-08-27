@@ -1,0 +1,915 @@
+id,text
+9435856,"<h1>How to Offer Free Shipping on a Full-Priced Product from a Specific Landing Page</h1> <p class=""no-margin"">To offer free shipping on a full-priced product from a specific landing page, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin""><b>Create a Landing Page</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">You can create a landing page using Zipify Pages by either using pre-built templates or starting with a blank page and adding sections as needed.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Add a Buy Box Block</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Use a Buy Box block on the landing page that is connected to your product inventory. This is typically how you sell products on pages built using the Zipify Pages app.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Set Button Destination</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">If you are using a non-Buy Box block, you can set the ""button destination"" to a URL and use a Cart or Checkout permalink to mimic an ""Add To Cart"" or ""Add To Checkout"" button. You can find more information on how to set this up in <a href=""https://help.shopify.com/en/manual/products/details/cart-permalink"" target=""_blank"" class=""intercom-content-link"">this Shopify article</a>.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Offer Free Shipping</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">To offer free shipping on a full-priced product, you can create a specific discount code in Shopify that provides free shipping. You can then append the product's checkout URL with <code>?discount=YourDiscountCode</code> where ""YourDiscountCode"" is the code you created for free shipping. This will automatically apply the discount at checkout.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Publish the Landing Page</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Once you have set up the Buy Box block and added the necessary links and discount codes, publish the landing page using Zipify Pages.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can offer free shipping on a full-priced product from a specific landing page created with Zipify Pages.</p>"
+9435871,"<h1>How to Embed Big Shop Pay Buttons on Zipify Pages</h1> <p class=""no-margin"">To embed Shop Pay buttons on Zipify Pages, follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Add a Dynamic Checkout Element underneath the Add to Cart button.</p>
+</li>
+<li>
+<p class=""no-margin"">Delete the Add to Cart button to display only the Shop Pay button.</p>
+</li>
+</ol><p class=""no-margin"">The type of checkout button displayed to customers depends on payment settings, Shop Promise activation, customer's browser, device, and payment history.</p>"
+943587701,"<h1>How to Customize Product Pages in Zipify and Shopify</h1> <p class=""no-margin"">To customize Product Pages in Zipify and Shopify, you have two options:</p>
+<p class=""no-margin""></p>
+"
+943587702,"<h1>How to Customize Product Pages in Zipify and Shopify</h1> <h1 id=""h_f50fcf5cd0"">Full Customization:</h1>
+<ol>
+<li>
+<p class=""no-margin"">Allows complete replacement of the default Product Page content with Zipify Pages sections.</p>
+</li>
+<li>
+<p class=""no-margin"">No section from your Theme is required to be used.</p>
+</li>
+<li>
+<p class=""no-margin"">Can enable the ""Theme Header/Footer"" option if desired to use your Theme's header and footer.</p>
+</li>
+<li>
+<p class=""no-margin"">Creates a new/separate product.liquid Template file for each new product page published using this approach.</p>
+</li>
+<li>
+<p class=""no-margin"">Recommended if your product page doesn't heavily rely on additional customization from 3rd party apps.</p>
+</li>
+</ol><p class=""no-margin"">For more details on Full Customization, <a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/4196323-4-zipify-pages-creating-a-new-product-page-layout"" target=""_blank"">click here</a>.</p>
+<p class=""no-margin""></p>
+"
+943587703,"<h1>How to Customize Product Pages in Zipify and Shopify</h1> <h1 id=""h_8557bbe4fe"">Partial Customization:</h1>
+<ol>
+<li>
+<p class=""no-margin"">Allows customization of Product Pages by adding Zipify Pages sections into your existing product page layout structure.</p>
+</li>
+<li>
+<p class=""no-margin"">Your Theme's Header, Footer, and Buy Box section are required to be used.</p>
+</li>
+<li>
+<p class=""no-margin"">Re-uses your default product.liquid Template file assigned to the particular product at the time you created the new layout in the Zipify Pages app.</p>
+</li>
+<li>
+<p class=""no-margin"">Recommended if your Product Page heavily integrates with other 3rd party apps for additional customization.</p>
+</li>
+</ol><p class=""no-margin"">Remember, when you publish a ""Product Page"" in Zipify Pages, you're actually publishing a Shopify Product Page Template for the selected product(s). Products are created and published in the ""Products"" section of your Shopify admin.</p>"
+9435820,"<h1>How to Pass UTM Parameters in Zipify Pages Opt-in Forms</h1> <p class=""no-margin"">To pass UTM parameters in Zipify Pages opt-in forms, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin""><b>Enable UTM Parameters Tracking</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">In the CRM Settings of the opt-in form, you can enable UTM parameters tracking.</p>
+</li>
+<li>
+<p class=""no-margin"">The UTM parameters that will be passed to the CRM profile as custom properties are:</p>
+<p class=""no-margin""></p>
+<ul>
+<li>
+<p class=""no-margin"">UTM Campaign (ZP)</p>
+</li>
+<li>
+<p class=""no-margin"">UTM Content (ZP)</p>
+</li>
+<li>
+<p class=""no-margin"">UTM Medium (ZP)</p>
+</li>
+<li>
+<p class=""no-margin"">UTM Source (ZP)</p>
+</li>
+<li>
+<p class=""no-margin"">UTM Term (ZP)</p>
+</li>
+</ul>
+</li>
+<li>
+<p class=""no-margin""><b>Configure the UTM Parameters</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">You can configure the UTM parameters in the CRM Settings section of the opt-in form.</p>
+</li>
+<li>
+<p class=""no-margin"">Make sure to enable the UTM parameters tracking to pass the necessary information to your CRM system.</p>
+</li>
+</ol><p class=""no-margin"">Here is an image showing the UTM parameters tracking settings in Zipify Pages opt-in forms:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/582945304/4d0a902c105b2bf5db5ccf61/image.png?expires=1719475200&amp;signature=baeb3de542378d6bb9605facbb44d4f0b4fd3d36ce1692369fee754916b0600b"" alt=""Image""></div><p class=""no-margin"">By following these steps, you can effectively pass UTM parameters in Zipify Pages opt-in forms.</p>"
+9435888,"<h1>How to Disable or Hide QA Section on Zipify Page</h1> <p class=""no-margin"">The customer contacted us for assistance with disabling/hiding the QA section on their Zipify page for a product. They mentioned that [PERSON] reviews are already being pulled in. Unfortunately, the assistant was unable to view the provided link and suggested contacting [PERSON] support for further assistance. The customer also has an open ticket with [PERSON] . The assistant mentioned that they are unable to edit plugins on Zipify and advised reaching out to [PERSON] support for more help.</p>"
+9435909,"<h1>How to set up variant images for post-purchase upsell</h1> <p class=""no-margin"">To set up variant images for post-purchase upsell, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Set the ""Default product image"" setting from the dropdown:</p>
+</li>
+<li>
+<p class=""no-margin"">Shopify Variant Image: The image for the product’s first variant is displayed.</p>
+</li>
+<li>
+<p class=""no-margin"">Shopify Product Image: Your main corresponding Shopify product image is displayed.</p>
+</li>
+<li>
+<p class=""no-margin"">Custom: The custom image you select will be displayed as the product image. 📝 All image options support variant image switching on the published page.</p>
+</li>
+<li>
+<p class=""no-margin"">If the ""Custom"" image option is chosen, you can:</p>
+</li>
+<li>
+<p class=""no-margin"">Crop Image.</p>
+</li>
+<li>
+<p class=""no-margin"">Change Image: When selecting a new image, the default product image setting will automatically change to ""Custom"".</p>
+</li>
+<li>
+<p class=""no-margin"">Enter Alt Text for the image.</p>
+</li>
+<li>
+<p class=""no-margin"">Set a Destination for the image to make it clickable:</p>
+</li>
+<li>
+<p class=""no-margin"">If the ""Inherit from Button"" box is checked, the image will inherit the same destination as the Product Button element within the same section.</p>
+</li>
+<li>
+<p class=""no-margin"">If the ""Inherit from Button"" box is not checked, select a destination option from the dropdown:</p>
+<p class=""no-margin""></p>
+<ul>
+<li>
+<p class=""no-margin"">None: The image will have no destination and not be clickable.</p>
+</li>
+<li>
+<p class=""no-margin"">Cart: The image will redirect to the Cart Page (/cart) on your store when clicked. No product will be added to the cart.</p>
+</li>
+<li>
+<p class=""no-margin"">Product: The image will redirect to a specific chosen Product page (/products) when clicked.</p>
+</li>
+</ul>
+</li>
+<li>
+<p class=""no-margin"">Set a Hover State option for the image from the dropdown:</p>
+</li>
+<li>
+<p class=""no-margin"">None (default)</p>
+</li>
+<li>
+<p class=""no-margin"">Hover Image: Show an alternate image when hovered over</p>
+</li>
+<li>
+<p class=""no-margin"">Color Overlay: Show a color overlay when hovered over</p>
+</li>
+<li>
+<p class=""no-margin"">Change Opacity: Change the opacity of the image when hovered over</p>
+</li>
+<li>
+<p class=""no-margin"">Optionally, you can enable a Badge for the image to add an additional visual cue or call-to-action overlay on top of the image.</p>
+</li>
+</ol><p class=""no-margin"">Remember to save your settings and preview the changes to ensure everything is set up correctly.</p>"
+9435861,"<h1>How does partial customization of a PDP work versus the fully customized PDP through Zipify?</h1> <p class=""no-margin"">Partial customization replaces the default Product Page content with Zipify Pages Sections, without using Theme sections. Full customization integrates Zipify Pages sections into the existing Theme layout. See examples <a href=""https://help.zipify.com/en/articles/4196323-creating-a-new-product-page-zipify-pages"" target=""_blank"" class=""intercom-content-link"">here</a>.</p>"
+9435866,"<h1>Integrating a Product Page into a Website</h1> <p class=""no-margin"">To integrate a Product Page into a website using Zipify Pages, you have two options:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin""><b>Option 1 - Full Customization:</b></p>
+</li>
+<li>
+<p class=""no-margin"">This option allows you to completely replace the default Product Page content with Zipify Pages Sections.</p>
+</li>
+<li>
+<p class=""no-margin"">No section from your Theme is required to be used.</p>
+</li>
+<li>
+<p class=""no-margin"">You can enable the ""Theme Header/Footer"" option if desired to use your Theme's header and footer for the new layout.</p>
+</li>
+<li>
+<p class=""no-margin"">This product page type can be assigned to one or multiple products (Advanced plan only).</p>
+</li>
+<li>
+<p class=""no-margin"">Recommended if your product page doesn't heavily rely on additional customization from 3rd party apps.</p>
+</li>
+<li>
+<p class=""no-margin"">Provides greater control and flexibility over the product page design.</p>
+</li>
+<li>
+<p class=""no-margin""><a href=""https://help.zipify.com/en/articles/7203805-zipify-pages-managing-your-subscription-plan-pricing#h_7eeca86e24"" target=""_blank"" class=""intercom-content-link"">Learn more about the Advanced plan here</a></p>
+</li>
+<li>
+<p class=""no-margin""><b>Option 2 - Partial Customization:</b></p>
+</li>
+<li>
+<p class=""no-margin"">This option allows you to customize Product Pages by adding different Zipify Pages sections into your Theme's existing product page layout structure.</p>
+</li>
+<li>
+<p class=""no-margin"">Your Theme's Header, Footer, and Buy Box section are required to be used.</p>
+</li>
+<li>
+<p class=""no-margin"">This product page type can only be assigned to one product at a time.</p>
+</li>
+<li>
+<p class=""no-margin"">Recommended if your Product Page integrates heavily with other 3rd party apps for additional customization.</p>
+</li>
+<li>
+<p class=""no-margin"">Re-uses your default product.liquid Template file.</p>
+</li>
+<li>
+<p class=""no-margin""><a href=""https://help.zipify.com/en/articles/4196323-creating-a-new-product-page-layout-zipify-pages"" target=""_blank"" class=""intercom-content-link"">More details on creating a new Product Page Layout with Zipify Pages</a></p>
+</li>
+</ol><p class=""no-margin"">Remember, when you publish a ""Product Page"" in Zipify Pages, you are actually publishing a Shopify Product Page Template for the selected product(s). Products are created and published in the ""Products"" section of your Shopify admin, not directly from the Zipify Pages app.</p>"
+9435869,"<h1>How to publish a redesigned page over the original page with the same URL handle?</h1> <p class=""no-margin"">To publish a redesigned page over the original one with the same URL handle, you need to either make the original page inactive/unpublished or change the URL handle of the original page. This will free up the specific URL to be used on the new page you want to publish.</p>"
+9435881,"<h1>How to Ensure UTM Parameters Pass to Klaviyo Profile from Zipify Pages</h1> <h1 id=""h_85462cd433"">Passing UTM Parameters to Klaviyo from Zipify Pages</h1>
+<p class=""no-margin"">When using Zipify Pages, ensure the mailing list is selected in CRM settings. Test in Incognito mode to verify UTM parameters pass correctly. Parameters should appear in Klaviyo's 'Custom parameters' section.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1038998075/69de4745fbdc6d437fc6b65b/image.png?expires=1719475200&amp;signature=6e11b35cd1612f897286d7b80d6a6298fc2cd07429d00ce3bb0d0031caafd859""></div><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1038999615/7832988affd03a107c08d23b/image.png?expires=1719475200&amp;signature=7f8d8c90573034498495bea360f000a237639dbe3637a1965c44e333ab100480""></div>"
+9435884,"<h1>How to Add a URL Destination in a Navigation Menu</h1> <p class=""no-margin"">To add a URL destination in a navigation menu, follow these steps:</p>
+<p class=""no-margin""></p>
+<ol><li>
+<p class=""no-margin"">Click on the ""Navigation Settings"" button in the sidebar to configure the links in the bar. You can find the button in the sidebar.</p>
+</li></ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/907653885/2ebe8af5a30634171584ffe3/image.png?expires=1719475200&amp;signature=1ea7c16629d8a19e7bb7edfc5bbd88693c615d7a1a2e072d89efda6425b0629e"" alt=""Navigation Settings""></div><ol><li>
+<p class=""no-margin"">In the Navigation Settings, you can add a new main menu link item and choose ""URL-Link To A Specific URL"" as the destination for the link.</p>
+</li></ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/789644713/7e7ecb8e2f8424f7da12fa52/image.png?expires=1719475200&amp;signature=66883ac8fa86cbdfc0d5fef6da27e36bebdc8d274b20456c49b22a8084d6fd34"" alt=""URL Destination""></div><ol>
+<li>
+<p class=""no-margin"">Enter or paste the specific URL you want to link to in the ""URL"" field.</p>
+</li>
+<li>
+<p class=""no-margin"">Save your changes.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can successfully add a URL destination to a navigation menu.</p>"
+9435900,"<h1>How to Set Up Navigation and Use Theme Footer in Zipify Pages</h1> <p class=""no-margin"">For setting up navigation, follow the guide on <a href=""https://help.zipify.com/en/articles/491206-the-navigation-element-zipify-pages"" target=""_blank"" class=""intercom-content-link"">The Navigation Element [Zipify Pages]</a>. To use your theme's footer, enable it in <b>Sales Channels &gt; Online Store &gt; Preferences</b> in your Shopify admin. If you don't want to enable the theme's header, you'll need to recreate it in Zipify Pages.</p>"
+9435901,"<h1>How to Set Up Navigation and Use Theme Footer in Zipify Pages</h1> <p class=""no-margin"">To set up navigation and use the theme footer in Zipify Pages, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Click into the Page Settings section of the Page Builder.</p>
+</li>
+<li>
+<p class=""no-margin"">In the ""Layout"" section, toggle on the ""Use theme header/footer"" option. Placeholder images will appear at the very top and bottom of the page indicating that the setting has been enabled.</p>
+</li>
+<li>
+<p class=""no-margin"">Click the ""Publish"" or ""Update"" button in the top-right corner to apply this setting to your published page.</p>
+</li>
+</ol><p class=""no-margin"">When you view your Published page, your actual Theme's Header and Footer will replace the placeholder images shown in the Page Builder.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">For more information, you can visit the <a href=""https://help.zipify.com/en/articles/3336365-zipify-pages-use-theme-header-footer"" target=""_blank"" class=""intercom-content-link"">Zipify Pages ""Use theme header/footer"" feature</a>.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">Additionally, to edit your navigation menu in Shopify admin to point to the new landing page URL, you can refer to <a href=""https://help.shopify.com/en/manual/online-store/os/menus-and-links/editing-menus"" target=""_blank"" class=""intercom-content-link"">editing your Navigation Menu(s)</a>.</p>"
+9435902,"<h1>Preventing Customers from Removing Products in Cart with Discounts</h1> <p class=""no-margin"">To prevent customers from removing products in the cart with discounts, set the default product quantity to discourage removals. Additionally, consider using discount codes with minimum purchase requirements to ensure the discount applies only when the specified conditions are met. You can also create URLs with discount codes for checkout, providing a seamless way to apply discounts to the cart.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">For more information on creating URLs with discount codes, refer to the <a href=""https://help.zipify.com/en/articles/837221-using-a-url-to-auto-fill-the-checkout-or-cart-page-with-product-s-zipify-pages#url-structure-to-add-a-discount-code-to-the-checkout-along-with-the-products"" target=""_blank"" class=""intercom-content-link"">Zipify Pages guide</a>.</p>"
+9435903,"<h1>Preventing Customers from Removing Products in Cart with Discounts</h1> <p class=""no-margin"">To prevent customers from removing products in the cart when discounts are applied, you can use dynamic discounts. Dynamic discounts auto-apply at checkout, ensuring that the discount is retained even if the customer tries to remove the product from the cart.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">Here are some important notes regarding dynamic discounts: - Dynamic discount types do auto-apply at Checkout. - The only Buy Box button destination that can work with this type is ""Checkout."" - Dynamic discount applies to each unit of the product. For example, if you pre-set the Buy Box quantity to 3 units and set a $10 dynamic discount, a $30 discount will be applied at checkout. - When you publish a page that uses a ""Dynamic"" discount type for a Buy Box, a unique Shopify Discount code is auto-generated in the ""Discounts"" section of your Shopify admin.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">For more information on dynamic discounts and how they work, you can refer to the <a href=""https://help.zipify.com/en/articles/9034839-product-elements-zipify-pages"" target=""_blank"" class=""intercom-content-link"">Product Elements</a> documentation.</p>"
+9435886,"<h1>How to Adjust Column Spacing and Element Size in Zipify Builder</h1> <p class=""no-margin"">To adjust column spacing and element size in Zipify Builder, follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Use the 'Fit to Content' button for automatic adjustment.</p>
+</li>
+<li>
+<p class=""no-margin"">Adjust column widths by dragging the adjustment bars.</p>
+</li>
+<li>
+<p class=""no-margin"">Consider using max width settings for images to control their size.</p>
+</li>
+<li>
+<p class=""no-margin"">For mobile optimization, duplicate blocks and make specific adjustments for mobile view.</p>
+</li>
+</ol><p class=""no-margin"">Remember, there is no 'Fit to Content' option on mobile, so use max width settings for adjustments.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">Consider requesting a 'Fit to Content' option for mobile as a feature request.</p>"
+9435887,"<h1>How to Adjust Column Spacing and Element Size in Zipify Builder</h1> <p class=""no-margin"">To adjust column spacing and element size in Zipify Builder, follow these steps:</p>
+<p class=""no-margin""></p>
+<ol><li>
+<p class=""no-margin"">Under the Settings dropdown (1), you can set the Icon section's Alignment(2), Size(3), Column Spacing(4), and Row Spacing(5).</p>
+</li></ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/656028239/ba6b9c5a8e29a455e58007cb/image.png?expires=1719475200&amp;signature=47b9275c357a333d0899bf71f468c93d519a4e75e488395c9412e6ba5c53b7bd"" alt=""Image""></div><ol>
+<li>
+<p class=""no-margin"">Pre-set options (S/M/L/XL) are provided for Size, Column Spacing, and Row Spacing, as well as a Custom option and a slider to set the exact px value for each if desired.</p>
+</li>
+<li>
+<p class=""no-margin"">For more details about customizing your Page Styles, you can check out <a href=""https://help.zipify.com/en/articles/3188123-page-styles-zipify-pages"" target=""_blank"" class=""intercom-content-link"">our help article</a>.</p>
+</li>
+</ol>"
+9435896,"<h1>Can I create a sales letter style page with Zipify Pages?</h1> <p class=""no-margin"">To create a sales letter style page with Zipify Pages, you can use the Full Customization Product Page template. This template offers extensive customization options to design a page that suits a sales letter format. You can include elements like compelling copy, testimonials, product details, and a call-to-action button to lead visitors to make a purchase.</p>"
+9435897,"<h1>Can I create a sales letter style page with Zipify Pages?</h1> <p class=""no-margin"">Yes, you can create a sales letter style page with Zipify Pages. Zipify Pages is a powerful tool that allows you to create custom pages without any coding experience. You can choose from pre-built templates or create a page completely from scratch by adding text, images, videos, and other elements. This flexibility enables you to design a sales letter style page tailored to your needs.</p>"
+9435908,"<h1>How to set up variant images for post-purchase upsell</h1> <p class=""no-margin"">To set up variant images for post-purchase upsell, choose from the following options:</p>
+<p class=""no-margin""></p>
+<ul>
+<li>
+<p class=""no-margin""><b>Single Image:</b> Pulls the main/featured image from the product listing in Shopify admin.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Custom Image:</b> Allows for a custom image to be added by uploading a file from your computer.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Image Carousel:</b> Pulls all images from the product listing in Shopify admin.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Image Border:</b> Enable to add a small border around the hero section image container.</p>
+</li>
+</ul><p class=""no-margin"">With the Image Carousel option, choose which images to use in the carousel via the 'Image Gallery' button.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/477654076/290c2313b3223fa8fbfa6fc8/chrome_2022-03-09_08-05-09.gif?expires=1719475200&amp;signature=e9e53b414bac4238f9672abc99eb504cf192b48b24fc04a996eebd60288f8fab""></div>"
+943585901,"<h1>How to Set Up Navigation and Footer in Zipify Pages</h1> <h1 id=""h_96d857ebea"">Setting Up Navigation in Zipify Pages</h1>
+<p class=""no-margin"">Learn how to set up navigation in Zipify Pages by following the steps outlined in <a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/491206-the-navigation-element-zipify-pages"" target=""_blank"">this guide</a>.</p>
+<p class=""no-margin""></p>
+"
+943585902,"<h1>How to Set Up Navigation and Footer in Zipify Pages</h1> <h1 id=""h_2d8d57e773"">Using the Theme's Footer</h1>
+<p class=""no-margin"">You can enable your theme's header and footer on your Zipify Pages. Find out how to do this in <a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/3336365-use-theme-header-footer-zipify-pages"" target=""_blank"">this article</a>.</p>"
+9435898,"<h1>How to add elements?</h1> <p class=""no-margin"">The <a href=""https://help.zipify.com/en/articles/2094255-html-section-zipify-pages"" target=""_blank"" class=""intercom-content-link"">HTML Section</a> makes adding embed codes easy. Paste custom HTML, CSS, and JavaScript code. Find it in the <b>Misc</b> category of the page sections library in the builder:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/937587006/a29dbe1d7b1820e341f64acb/image.png?expires=1719475200&amp;signature=5f282a9b4b327598bc27edb80d5616fd0381bcaf3bfc46853f455a06bf21d702""></div>"
+9435899,"<h1>How to add elements?</h1> <p class=""no-margin"">To add elements, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Click on an existing element.</p>
+</li>
+<li>
+<p class=""no-margin"">Click the ➕ sign above or below the existing element, depending on where you want the new element added.</p>
+</li>
+<li>
+<p class=""no-margin"">This will invoke the ""Add Element"" popup where you can choose from a variety of elements to add.</p>
+</li>
+<li>
+<p class=""no-margin"">Select the desired element by clicking on it to add it to the section.</p>
+</li>
+</ol><p class=""no-margin"">Here are some visual references to help you understand the process:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/885846464/cf28fafbac3a2aa4c0b1b129/image.png?expires=1719475200&amp;signature=9f3115f827724fa6e56b612b493297703e4e6020da0d8d05d6af87d4d4a21604"" alt=""Add Element Step 1""></div><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/890751254/e9a833ff3cfb02a0b0d62b44/image.png?expires=1719475200&amp;signature=9f5210252359784436d226ee0fb3014aa2d4e70f53080a00f3ec122f704a70ff"" alt=""Add Element Step 2""></div>"
+9435910,"<h1>How to Add a Quiz to Your Store</h1> <p class=""no-margin"">To add a quiz to your store, create a new page for the quiz with an HTML section to paste the quiz code. Link the quiz page URL to a button on your main page for easy access.</p>"
+9435879,"<h1>How to Edit Page Separately for Phone and Desktop Versions</h1> <p class=""no-margin""></p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">To edit sections separately for phone and desktop versions, duplicate the section and customize it per device without deleting the sections. This way, you can make changes specific to each version without affecting the other. Avoid deleting duplicated sections to maintain the design consistency across different devices.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1036744716/e80a3dc7380bc82debec8534/40094db7-a84f-42c9-968f-5adee6db7708?expires=1719475200&amp;signature=436a3fc2db16152db94596c8b82ce883b6dedaa11bcfa14ecd9d1c80885b6dbe""></div><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1036762934/4e62df476d5f3dc6d20412ad/46c99620-2f51-4d6e-bdf5-f9967f98eb82?expires=1719475200&amp;signature=f1a8a8e75067bef13b6f9d17bb6a8743efb13a7fc8d5c518b32410146deb7695""></div>"
+9435883,"<h1>How to Add a URL Destination in a Navigation Menu</h1> <p class=""no-margin"">To add a URL destination in a Navigation menu, enter a complete web address as it would be typed into the address bar. If encountering issues, try recreating the menu from scratch.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1037189745/50fa4048fd0bd9028537fd75/image.png?expires=1719475200&amp;signature=b615086bb78631e1d801ee339c86d0ea7e6dcd90ff03683f40d0aa769abbec13""></div>"
+9435915,"<h1>How to Add an 'As Seen On' Badge to a Landing Page</h1> <p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin""><b>Save Landing Page as a Template</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Access the Landing Pages template library by going to <a href=""https://downloads.intercomcdn.com/i/o/304695844/f255d2c092aa9eea2a7bdb74/2021-02-25_08-45-25.gif?expires=1716975900&amp;signature=2c41754f13894218146fd74579ed8a5ad8f8b24bc70eea22d6bc0359dc33ef2a"" target=""_blank"" class=""intercom-content-link"">Landing Pages &gt; New Page</a>.</p>
+</li>
+<li>
+<p class=""no-margin"">Click on the ""Save as a Template"" action from either the Landing Pages table or the Page Builder's Page Settings section.</p>
+</li>
+<li>
+<p class=""no-margin"">Add the Template Name and any Tags for organizational purposes.</p>
+</li>
+<li>
+<p class=""no-margin"">Click the Save button to save the new Template.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Adding a Page using the ""Blank Page"" option</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Hover over the ""Pages"" section in the left sidebar and select ""Landing Pages"" like <a href=""https://downloads.intercomcdn.com/i/o/646907700/d3a2638426611d474a10bd9a/image.png?expires=1716975900&amp;signature=41b2bad1cf3af34c780ee944391d683e350df7af7e8d1a776490efb7602cbda0"" target=""_blank"" class=""intercom-content-link"">this</a>.</p>
+</li>
+<li>
+<p class=""no-margin"">Click on the ""New Page"" button and select the ""Create Blank Page"" option.</p>
+</li>
+<li>
+<p class=""no-margin"">Enter the Page Name, select a Group, and add Tags.</p>
+</li>
+<li>
+<p class=""no-margin"">Click the ""Create"" button to start building out your page with Page Sections as shown <a href=""https://downloads.intercomcdn.com/i/o/646924996/6c59abae2407dcd6313d9e02/image.png?expires=1716975900&amp;signature=9e4e44ad6d595227bff6279a55bcfe49b443538c556db76d6be96c37446ccb42"" target=""_blank"" class=""intercom-content-link"">here</a>.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can easily create a Landing Page with an 'As Seen On' badge.</p>"
+9435868,"<h1>check it out on live view. There's all this white space above and below each picture</h1> <p class=""no-margin"">To address the issue of white space above and below each picture on the live view, you can adjust the CSS styling for the images. You may need to modify the margin or padding properties to reduce the white space.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">If you have access to the CSS code, you can try adding the following style to reduce the white space:</p>
+<p class=""no-margin""></p>
+<p class=""no-margin""><code>css img { margin: 0; padding: 0; }</code></p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">This CSS code snippet will remove any margin and padding around the images, which should help reduce the white space above and below each picture.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">If you are not familiar with CSS or don't have access to the code, you may need to reach out to your website developer or designer for assistance in making these adjustments.</p>"
+9435914,"<h1>How to Add an 'As Seen On' Badge to a Landing Page</h1> <p class=""no-margin"">To add an 'As Seen On' badge to your landing page in Zipify Pages, follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Access the HTML section in the page editor.</p>
+</li>
+<li>
+<p class=""no-margin"">Insert the code for the 'As Seen On' badge in the HTML section.</p>
+</li>
+<li>
+<p class=""no-margin"">Save and preview your landing page to ensure the badge appears correctly.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can easily incorporate an 'As Seen On' badge into your landing page design.</p>
+<p class=""no-margin""></p>"
+9435865,"<h1>Integrating a Product Page into a Website</h1> <p class=""no-margin"">When you publish a <b>Product Page</b> in Zipify Pages, what you're actually doing is publishing a Shopify <b>Product Page Template</b> for the product(s) you've selected. Once you publish it, it will be the product page for said product.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">It's recommended to leave a review to help the team and boost morale. If you need further assistance, feel free to reach out!</p>
+<p class=""no-margin""></p>
+<p class=""no-margin""><a href=""https://apps.shopify.com/zipifypages#modal-show=ReviewListingModal"" target=""_blank"" class=""intercom-content-link"">Leave a review for Zipify Pages</a></p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://master-of-code-global-e5b5f9b73a74.intercom-attachments-1.com/i/o/1073785253/d83ebc8c463d3550c4f33ac0/1f64f%402x.png?expires=1719475200&amp;signature=b7be980467330341e0a64e60f38f340d4b7669fa61310d7f8b6b3f34519c134e""></div>"
+9435890,"<h1>Product availability</h1> <p class=""no-margin"">In order for your products to be available to use in the Buy Box blocks in ZP or it has to be visible to the <b>Online Store</b> sales channel. There is somewhat of a workaround for this if you don't want this product to be accessible on the storefront. You can implement steps 1-3 below, depending on how well you want the product ""hidden"".</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Refer to this Shopify help guide: <a href=""https://help.shopify.com/themes/customization/collections/change-catalog-page"" target=""_blank"" class=""intercom-content-link"">Change Catalog Page</a> to create a collection to control your catalog page and exclude specific products.</p>
+</li>
+<li>
+<p class=""no-margin"">Hide the product from store search using the information in <a href=""https://community.shopify.com/c/technical-q-a/does-anyone-know-how-to-hide-certain-products-from-search-bar-in/td-p/1292089?utm_source=gurucopy&amp;utm_medium=link&amp;utm_campaign=Gurus"" target=""_blank"" class=""intercom-content-link"">this article</a>.</p>
+</li>
+<li>
+<p class=""no-margin"">Prevent the product page from being listed on search engines like Google by following the steps in <a href=""https://help.shopify.com/en/manual/promoting-marketing/seo/hide-a-page-from-search-engines"" target=""_blank"" class=""intercom-content-link"">this Shopify help article</a>.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can restrict the cross-sell item to one Zipify landing page and control its visibility on your website.</p>"
+943929901,"<h1>Dashboard [Zipify Pages]</h1> <p class=""no-margin"">The Zipify Pages ""<b>Dashboard</b>"" is the <b>Home</b> of the Zipify Pages app!</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/646892393/c585a55128e19557da363853/image.png?expires=1717747200&amp;signature=0c47c6ef7fdb639f673ef75383898d5291a9be1d37a810181ff538d56d8a605a"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/646892393/c585a55128e19557da363853/image.png?expires=1719475200&amp;signature=809d822ac64e5dff63b393e72edbd687f3e0c21a16375e2b240fe3e1890609bd""/></a></div>"
+943929902,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_b0a0009842"">Create New Page</h1>
+<p class=""no-margin"">At the top of the Dashboard is the option to ""<b>Create New Page</b>"" where you can quickly and easily create any new page type (<b>Landing Page / Product Page / Home Page / Blog Post</b>) available in the app:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/646893068/f754bf12c13f924f96c8f6e4/image.png?expires=1717747200&amp;signature=5a2063c8b244247f2115d43a1065e19d7e73bc982b05c6ff3394be16afa9084b"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/646893068/f754bf12c13f924f96c8f6e4/image.png?expires=1719475200&amp;signature=4de0e166fccfb09b6e2cdd656db9c4189620681fbb6df540c7e25fef2ab82f37""/></a></div><p class=""no-margin"">More details on creating and managing each different page type can be found in our help articles below:</p>
+<p class=""no-margin""></p>
+<ul>
+<li>
+<p class=""no-margin""><b><a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/3336346-3-zipify-pages-creating-a-new-home-page"" target=""_blank"">Home Pages</a></b></p>
+</li>
+<li>
+<p class=""no-margin""><b><a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/3336047-3-zipify-pages-creating-a-new-landing-page"" target=""_blank"">Landing Pages</a></b></p>
+</li>
+<li>
+<p class=""no-margin""><b><a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/4196323-4-zipify-pages-creating-a-new-product-page-layout"" target=""_blank"">Product Pages</a></b></p>
+</li>
+<li>
+<p class=""no-margin""><b><a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/3341610-zipify-pages-the-blog-feature"" target=""_blank"">Blog / Blog Posts</a></b></p>
+</li>
+</ul>"
+943929903,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_6bd56078a7"">Welcome Video</h1>
+<p class=""no-margin"">Below is a short <b>Welcome Video</b> with high-level information about how the app works on your store and how you can start using it!</p>
+<p class=""no-margin""></p>
+<p class=""no-margin""></p>
+<p class=""no-margin""></p>
+<p class=""no-margin""></p>
+<div class=""intercom-h2b-video""><iframe allowfullscreen="""" frameborder=""0"" mozallowfullscreen="""" src=""https://fast.wistia.net/embed/iframe/937p05axmf"" webkitallowfullscreen=""""></iframe></div>"
+943929904,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_caba3a36f5"">Recent Pages</h1>
+<p class=""no-margin"">In the ""<b>Recent Pages</b>"" section, your <b>5 most recently edited and/or published</b> pages will be listed. You can click on the <b>page name</b> to edit the page or on the 👁️ button to view the published page:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/646895392/9d3d9c4555d4b296c44392c5/image.png?expires=1717747200&amp;signature=631a095a41e09d0b7ed0f13c2755cf235b0507da38527a87d9a05d8c80fef0c6"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/646895392/9d3d9c4555d4b296c44392c5/image.png?expires=1719475200&amp;signature=1bfeb35923dcf0b9c9817efa8d579c7b9f5ed28b42ba3200045a3abe23f224e6""/></a></div>"
+943929905,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_1f9d4447ee"">Pages That Need Your Attention</h1>
+<p class=""no-margin"">The ""<b>Pages That Need Your Attention"" </b>section will list any pages which may require your attention:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/300373122/9453163397097da2d76f0b23/image.png?expires=1717747200&amp;signature=d6ed4a8a8f929ad0001c34f6777d759956e7c2551503197a94bc6037d5706597"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/300373122/9453163397097da2d76f0b23/image.png?expires=1719475200&amp;signature=d7509ba7b1964acc99906aa0fc0c885e576f64da9412bcda7b257449e56fd351""/></a></div><p class=""no-margin"">There are three cases where a page status will show as ""<b>Fix Me</b>"":</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">A product on the page added via a Buy Box is <b>removed</b> from the store.</p>
+</li>
+<li>
+<p class=""no-margin"">A product on the page added via a Buy Box is set to <b>""Draft""</b> to the Online Store sales channel.</p>
+</li>
+<li>
+<p class=""no-margin"">The page handle for a product on the page added via a Buy Box has <b>changed</b>.</p>
+</li>
+</ol><p class=""no-margin"">To fix the ""<b>Fix Me</b>"" status for a page, first, try clicking the ""<b>Update</b>"" button in the page editor. If that doesn't resolve it, <b>re-select a new product within the Buy Box block(s)</b> and then click the ""<b>Update</b>"" button. If you use the ""<b>Cross-Sell</b>"" section in your Buy Box, check there as well as the product featured as the cross-sell may have been removed from your store or set to ""Draft"" status for the Online Store sales channel.</p>
+<p class=""no-margin""></p>
+"
+943929906,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_52ebc346c0"">Get the Most out of Zipify Pages</h1>
+<p class=""no-margin"">The ""<b>Get the Most out of Zipify Pages</b>"" section has helpful information and recommendations to follow to get the most out of the app such as:</p>
+<p class=""no-margin""></p>
+<ul>
+<li>
+<p class=""no-margin""><b>Connecting Zipify Analytics</b> account for Statistics and Split Testing</p>
+</li>
+<li>
+<p class=""no-margin""><b>Connecting a supported CRM/ESP</b> system for use with our built-in opt-in forms</p>
+</li>
+</ul><div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/833363540/0f2e873f821229c254d86ad2/image.png?expires=1717747200&amp;signature=c4533e2df926039109b70c1d581e469de6895a1c9659ca5ad85942caebce0489"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/833363540/0f2e873f821229c254d86ad2/image.png?expires=1719475200&amp;signature=d21d54904cdfce4ad89e1c9421161e458dd925b7444a98b2b2603b6328e9620e""/></a></div>"
+943929907,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_6c3d11a238"">Free Videos</h1>
+<p class=""no-margin"">In the<b> ""Free Videos: How To Make More Money with Zipify"" </b>section, you can browse our catalog of Zipify Pages <b>case study</b> videos, <b>feature update</b> videos, <b>blog post</b> videos, and more! All added to help you increase your knowledge about Zipify Pages and how it can help you make more money on your Shopify store:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/300377682/f19bba3d74161944f9bef6cf/2021-02-15_10-16-11.gif?expires=1717747200&amp;signature=f2c63db7eb72311c925737134eb5e5a4f0de8b713b9974010208fd234155ed85"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/300377682/f19bba3d74161944f9bef6cf/2021-02-15_10-16-11.gif?expires=1719475200&amp;signature=67e4eb5ef91bcb1648f8c7a03895cafb37030f25dea71166b64826d4d0d4ca30""/></a></div>"
+943929908,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_29fc5015a4"">Featured Articles</h1>
+<p class=""no-margin"">The ""<b>Featured Articles"" </b>section will list a few of the many helpful articles we feature on our <b>Blog</b> at <b><a class=""intercom-content-link"" href=""https://zipify.com/category/most-recent/"" target=""_blank"">Zipify.com</a></b></p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/300378476/ace95caa174f9d48579c3b26/image.png?expires=1717747200&amp;signature=a24b715a88e0943cffe0833d32d7597824f247dcd461ac8e51a07cedff9a73dc"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/300378476/ace95caa174f9d48579c3b26/image.png?expires=1719475200&amp;signature=9a151169fb1176db374f65fa584afbb9eeff1015d488fcbc8e8d7b1141bf6cda""/></a></div>"
+943929909,"<h1>Dashboard [Zipify Pages]</h1> <h1 id=""h_3bd014358b"">Need Help?  </h1>
+<p class=""no-margin""></p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">If you need help with anything, we have resources available for you!</p>
+<p class=""no-margin""></p>
+<ul>
+<li>
+<p class=""no-margin"">Click the <b>Help Center</b> icon to be taken to our <b><a class=""intercom-content-link"" href=""https://help.zipify.com/en/collections/130679-zipify-pages-tutorials-documentation"" target=""_blank"">Zipify Pages help center</a></b> and supporting documentation.</p>
+</li>
+<li>
+<p class=""no-margin"">Click the <b>blue chat bubble</b> in the bottom-right of your screen to chat with one of our amazing support agents!</p>
+</li>
+<li>
+<p class=""no-margin"">View our <b><a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/3416156-zipify-pages-faq"" target=""_blank"">Frequently Asked Questions help article</a></b> for quick answers to commonly asked questions.</p>
+</li>
+</ul><p class=""no-margin"">If you need help with anything at all, please don't hesitate to reach out to us in support chat:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><a href=""https://downloads.intercomcdn.com/i/o/300379706/21d6eb0992011c94b8cceeef/image.png?expires=1717747200&amp;signature=08191a67e38384fabd2b5bcc6dc6c09c75a8effb04794b8a2283c17bebd63359"" target=""_blank""><img src=""https://downloads.intercomcdn.com/i/o/300379706/21d6eb0992011c94b8cceeef/image.png?expires=1719475200&amp;signature=d5965d48632973424a88adcfd9776bf7c65c9c59f6e221cacbb230b825b88855""/></a></div>"
+9435906,"<h1>How to Troubleshoot UTM Tracking Parameters Not Passing to Contact Profiles</h1> <h1 id=""h_c88372aa39"">Troubleshooting UTM Tracking Parameters</h1>
+<p class=""no-margin"">If UTM parameters are not passing to contact profiles, ensure the correct list is selected in CRM settings. Test in Incognito mode after updating the page. Verify UTM parameters in Klaviyo's 'Custom parameters' section for successful tracking.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1038998075/69de4745fbdc6d437fc6b65b/image.png?expires=1719475200&amp;signature=6e11b35cd1612f897286d7b80d6a6298fc2cd07429d00ce3bb0d0031caafd859""></div><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1038999615/7832988affd03a107c08d23b/image.png?expires=1719475200&amp;signature=7f8d8c90573034498495bea360f000a237639dbe3637a1965c44e333ab100480""></div>"
+9435913,"<h1>How to Display Compare at Price and Your Price in Product Blocks</h1> <p class=""no-margin"">To display the ""Compare At Price"" and ""Price"" in product blocks, you need to follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Click on the ""Product"" section element.</p>
+</li>
+<li>
+<p class=""no-margin"">Click on the ""Add Product"" button in the sidebar to choose the product you want to use.</p>
+</li>
+<li>
+<p class=""no-margin"">Once a product is selected, in the ""Product"" tab of the sidebar, you can set the ""Product Discount"" type from the dropdown menu. There are 6 Discount options available:</p>
+</li>
+<li>
+<p class=""no-margin"">None: No discount will be shown.</p>
+</li>
+<li>
+<p class=""no-margin"">Percent (Dynamic): Show a % based discount which auto-applies at Checkout.</p>
+</li>
+<li>
+<p class=""no-margin"">Fixed (Dynamic): Show a $ based discount which auto-applies at Checkout.</p>
+</li>
+<li>
+<p class=""no-margin"">Compare At Price: Show the product's ""Compare at price"" pulled from Shopify. Make sure the compare at price is higher than the price, otherwise it won't show.</p>
+</li>
+<li>
+<p class=""no-margin"">Percent (Static): Show a % based discount. No discount auto-applies at Checkout.</p>
+</li>
+<li>
+<p class=""no-margin"">Fixed (Static): Show a $ based discount. No discount auto-applies at Checkout.</p>
+</li>
+<li>
+<p class=""no-margin"">Set the ""Default Product Quantity"" you'd like used for the product.</p>
+</li>
+<li>
+<p class=""no-margin"">Access ""Layout"" options for the product element, including Vertical Alignment (Top/Middle/Bottom) and two different Layout options.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can display the ""Compare At Price"" and ""Price"" in product blocks.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/982927627/e42e3d99266ac492b8983722/image.png?expires=1719475200&amp;signature=3836208fccc3af6e4842d97b8bed93e172655d49497c4f92ad6bdcc0e708720d"" alt=""Product""></div>"
+9435880,"<h1>How to Edit Page Separately for Phone and Desktop Versions</h1> <p class=""no-margin"">To edit a page separately for phone and desktop versions, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Click on the desired icon at the top of the builder or on the ""Edit on"" icon in the left sidebar menu available for each section, row, column, and element to switch to Tablet or Mobile edit modes.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/901857060/821644912e8bb283b4bbc65c/image.png?expires=1719475200&amp;signature=9e7b269b117adea6fb125def06b247163bffad798fc508cce217e7be8170a89b"" alt=""Image""></div>
+</li>
+<li>
+<p class=""no-margin"">Once in Tablet or Mobile edit modes, you can adjust the appearance of elements on each device type independently. Main settings for elements are available in Desktop edit mode only.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/901859831/d385cd8f33b58ebe2434551a/image.png?expires=1719475200&amp;signature=bf4c701ac9fafa532336fa7679c5750bb2bd614c42a8cef01b1a06ddf6ec723e"" alt=""Image""></div>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can customize and optimize the appearance of your page sections and elements for both phone and desktop versions independently.</p>"
+9435864,"<h1>How to adjust video size on a webpage</h1> <p class=""no-margin"">To adjust the video size on a webpage using Zipify, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin""><b>Video Settings &amp; Styles</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Click on the ""Size"" tab in the sidebar of the builder.</p>
+</li>
+<li>
+<p class=""no-margin"">You can edit the video's size with available presets of S/M/L/XL or use the slider to make a Custom size instead.</p>
+</li>
+<li>
+<p class=""no-margin"">You can also set the Max Width for the video on the page. Presets of None/S/M/L/XL are provided, or you can set a Custom size in pixels.</p>
+</li>
+<li>
+<p class=""no-margin"">Adjust the Aspect Ratio to define the proportional relationship between the width and height of the video frame. Common presets like 1:1 (square), 2:3 (vertical), 4:3 (classic TV), and 16:9 (landscape) are available.</p>
+</li>
+</ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/782201927/0eef6651ab1f8c438fce6f8e/image.png?expires=1719475200&amp;signature=7754e9c9532e5534531df9727676760ca32f83b6f12298d99b4e9deabb0974cb"" alt=""Image""></div><ol>
+<li>
+<p class=""no-margin""><b>Adding Video Player Parameters to a YouTube Video</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">If you are embedding a YouTube video, you can add parameters like auto-play, mute, loop, etc., to adjust the video behavior.</p>
+</li>
+<li>
+<p class=""no-margin"">Information about YouTube player parameters can be found <a href=""https://developers.google.com/youtube/player_parameters"" target=""_blank"" class=""intercom-content-link"">here</a>.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Media - Display an Image or Video in a lightbox popup</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">You can display an image or video in a lightbox popup by adding the desired media and configuring its display settings.</p>
+</li>
+</ol><p class=""no-margin"">Remember to copy your modified embed code and paste it into the Video element in Zipify Pages to apply the changes.</p>"
+9435894,"<h1>How to Adjust the Width of an HTML Box</h1> <p class=""no-margin"">The size of the HTML block in your website can be adjusted by enabling the full width or max width options. If the box appears small, consider adding more content or moving elements within the box to make it appear larger.</p>"
+9435895,"<h1>How to Adjust the Width of an HTML Box</h1> <p class=""no-margin"">To adjust the width of an HTML box, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Set the ""Image Size"" setting to 100%</p>
+</li>
+<li>
+<p class=""no-margin"">Set the ""Max Width"" setting to None</p>
+</li>
+<li>
+<p class=""no-margin"">Toggle on the ""Full Width"" option in the Section Appearance setting's Layout tab</p>
+</li>
+<li>
+<p class=""no-margin"">Set the left/right padding values to 0 on all device types where the image should be full width</p>
+</li>
+</ol><p class=""no-margin"">Here is an example of how to adjust the width of an HTML box using the provided images:</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/793123450/47118bd0e4e51df59f83a974/image.png?expires=1719475200&amp;signature=b30f3f5ea9fccee7ef81b35c3fecc1e13484dcd0bd457aa48cbc393c5546683f"" alt=""Image""></div><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/906773039/2a3659b15cb105c58d00c642/image.png?expires=1719475200&amp;signature=85831bd0acda3daa9e2f37981d0bfa9b2f48c09d5b00a6b40fc48665361f5640"" alt=""Image""></div><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/906774578/6a6ddfd83082b91c9846c2d1/image.png?expires=1719475200&amp;signature=3b53a3878fc03b7a2b4dcebacab34a93d989c3ae88b295df2821f87852628555"" alt=""Image""></div><p class=""no-margin"">By following these steps, you can ensure that your HTML box appears at the desired width on your webpage.</p>"
+9435912,"<h1>How to Display Compare at Price and Your Price in Product Blocks</h1> <p class=""no-margin"">To display the compare at price and your price in product blocks, follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Select the compare-at-price option in the sidebar settings.</p>
+</li>
+<li>
+<p class=""no-margin"">If the your price label is missing, replace the element with a new one.</p>
+</li>
+</ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1039014172/e1fcb5dc245c1896a8ebad3c/910495d9-5e7d-4496-b2fa-81150dfd2140?expires=1719475200&amp;signature=43f321191187eb37a3c26eaec7a2f3d4356a411c72ae6c3c9fef34935297ad46""></div>"
+943586001,"<h1>How to Set Up Navigation and Footer in Zipify Pages</h1> <p class=""no-margin"">To set up the Navigation and Footer in Zipify Pages, follow these steps:</p>
+<p class=""no-margin""></p>
+"
+943586002,"<h1>How to Set Up Navigation and Footer in Zipify Pages</h1> <h1 id=""h_37cb45ac42"">Navigation:</h1>
+<ol>
+<li>
+<p class=""no-margin""><b>Edit Navigation Menu:</b> To point to the new landing page URL, edit your Navigation Menu(s) in the Shopify admin. You can do this by <a class=""intercom-content-link"" href=""https://help.shopify.com/en/manual/online-store/os/menus-and-links/editing-menus"" target=""_blank"">editing your Navigation Menu(s)</a>.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Direct Linking:</b> You can also directly link to the landing page in email/social/ad campaigns to make it accessible to visitors and customers.</p>
+</li>
+</ol>"
+943586003,"<h1>How to Set Up Navigation and Footer in Zipify Pages</h1> <h1 id=""h_1746578da2"">Footer:</h1>
+<ol>
+<li>
+<p class=""no-margin""><b>Page Settings:</b> In the Page Settings tab, you can set the Header and Footer settings for the page.</p>
+</li>
+<li>
+<p class=""no-margin"">Enable the ""Use theme header/footer"" feature to pull in your store Theme's header and footer to the page. Placeholder images will be shown in the page builder, and your actual Theme header/footer will be used on the published page version only. <a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/3336365-use-theme-header-footer-zipify-pages"" target=""_blank"">More details here</a>.</p>
+</li>
+<li>
+<p class=""no-margin"">You can also enable ""Use my Global Header"" and ""Use my Global Footer"" to use your configured Global Header and Footer from the Zipify Pages app.</p>
+</li>
+<li>
+<p class=""no-margin"">Enabling ""Enable fixed layout"" will constrain page sections to a predetermined max width for Desktop/Tablet views.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Background Settings:</b> Adjust the page's background settings, including Color and Image. You can set a custom color or add a background image from the <a class=""intercom-content-link"" href=""https://help.zipify.com/en/articles/2612447-the-image-library-zipify-pages"" target=""_blank"">Image Library</a>.</p>
+</li>
+<li>
+<p class=""no-margin""><b>General Settings:</b> Set the timezone for countdown timer elements and enable the ""Scroll To Top Button"" widget.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Save Page as a Template:</b> Click this button to save the current page as a Template for future use.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can effectively set up the Navigation and Footer in Zipify Pages.</p>"
+9435862,"<h1>How does partial customization of a PDP work versus the fully customized PDP through Zipify?</h1> <p class=""no-margin"">With partial customization of a Product Detail Page (PDP) through Zipify, you can customize Product Pages (/products) by adding different Zipify Pages sections into your Theme's existing product page layout structure. Your Theme's Header, Footer, and Buy Box section are required to be used. This option allows you to assign the customization to one product at a time. The Buy Box section from the product page template assigned to the product will be used, along with your Theme's Header and Footer. New Zipify Pages sections can be added either above or below the ""Product Section Placeholder"" section.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">On the other hand, with fully customized PDP through Zipify, you have the option of full customization. This allows you to completely replace the default Product Page (/products) content with Zipify Pages Sections. No section from your Theme is required to be used, although you can enable the ""Theme Header/Footer"" option if desired. This option can be assigned to one or multiple products (Advanced plan only). When using full customization, two assets are created during the publishing of a Product page: a Template file and a Section file. JSON markup is recorded in the Template file, and HTML template content is recorded in the Section file.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">In summary, partial customization integrates Zipify Pages sections into your existing product page layout structure, while full customization completely replaces the default product page content with Zipify Pages Sections.</p>"
+9435867,"<h1>check it out on live view. There's all this white space above and below each picture</h1> <p class=""no-margin"">Hi [PERSON],</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">Thank you for contacting Zipify support!<br>Please bear with me here, I'm taking a look at the page now.</p>"
+9435842,"<h1>How to Change Meta Title and URL for a Landing Page</h1> <p class=""no-margin"">To change the Meta Title and URL for a Landing Page, you can follow these steps:</p>
+<ol><li>
+<p class=""no-margin"">Go to the <b>General</b> tab in the Page Builder interface.</p>
+</li></ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/890906795/b01d6ac25c02b6c73fb88435/image.png?expires=1719475200&amp;signature=1eb28e90a3e41105f2872a3dc532353a8ba324cb6b3b8feb7fd165dba8b27ef1"" alt=""General Tab""></div><ol>
+<li>
+<p class=""no-margin"">Update the following information:</p>
+</li>
+<li>
+<p class=""no-margin""><b>Meta Title</b>: Enter a descriptive title for the page.</p>
+</li>
+<li>
+<p class=""no-margin""><b>URL and Handle</b>: Adjust the page handle to determine the URL of the page.</p>
+</li>
+<li>
+<p class=""no-margin"">Click the <b>Update</b> button to save your changes.</p>
+</li>
+</ol><p class=""no-margin"">Remember, the Meta Title is used for the HTML <code>&lt;title&gt;</code> tag and the URL and Handle determine the page's URL.</p>"
+9435863,"<h1>How to adjust video size on a webpage</h1> <p class=""no-margin"">You can change the size and aspect ratio of a video on a webpage by accessing the left-hand menu. Here is a visual guide to help you with the process:<br>​</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/782199539/da5e19617bbcadf8fdf4ec6a/image.png?expires=1719475200&amp;signature=208f143a3ddf41963675cdc843ce5cfd8710d070a8e45adcfe42950a38a5b354""></div>"
+9435874,"<h1>Do I need to create new API keys in Klaviyo for Zipify integrations?</h1> <p class=""no-margin"">From our end, The CRM form should work properly. We updated the API version a week ago.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">Could you provide any of the text that was sent to you by [PERSON]?</p>"
+9435882,"<h1>How to Ensure UTM Parameters Pass to Klaviyo Profile from Zipify Pages</h1> <p class=""no-margin"">To ensure UTM parameters pass to Klaviyo profile from Zipify Pages, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">First, make sure you have implemented the necessary information and code from Klaviyo's guide to your Shopify store for ""Active on Site"" tracking. You can find the guide <a href=""https://help.klaviyo.com/hc/en-us/articles/360020342232"" target=""_blank"" class=""intercom-content-link"">here</a>.</p>
+</li>
+<li>
+<p class=""no-margin"">Next, implement the ""Added to Cart"" event code within your Theme as described in <a href=""https://help.klaviyo.com/hc/en-us/articles/115001396711"" target=""_blank"" class=""intercom-content-link"">this article</a>.</p>
+</li>
+<li>
+<p class=""no-margin"">To have Klaviyo's ""Viewed Product"" and ""Added to Cart"" events fire for products featured in Buy Boxes on your Zipify Pages, you need to follow the steps provided in the documentation.</p>
+</li>
+<li>
+<p class=""no-margin"">Ensure that a ""Cart"" destination is used for the Buy Box button to have the ""Added to Cart"" event fire correctly.</p>
+</li>
+<li>
+<p class=""no-margin"">Copy the necessary code provided in the documentation and paste it between the <code>&lt;zp_product_footer_integration&gt;</code> integration tags within each Buy Box snippet file where needed.</p>
+</li>
+<li>
+<p class=""no-margin"">Save each file after adding the code. Repeat the process for the remaining Buy Box snippet files if needed.</p>
+</li>
+<li>
+<p class=""no-margin"">If you have enabled Customer Accounts for your store, add the extra script provided in the documentation to the <code>theme.zipifypages.liquid</code> file to identify your customers with the email they use to log in to your store.</p>
+</li>
+</ol><p class=""no-margin"">Remember to follow these steps to ensure that UTM parameters pass to Klaviyo profile from Zipify Pages effectively.</p>"
+9435889,"<h1>How to Disable or Hide QA Section on Zipify Page</h1> <p class=""no-margin"">To disable or hide the QA section on a Zipify Page, you can follow these steps:</p>
+<ol>
+<li>
+<p class=""no-margin""><b>Remove Automatic Schema</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">If you don't want the automatic Schema provided by the Zipify Pages app to be included within any/all Buy Box sections, you can disable it by inserting the following code: <code>liquid {% assign zp_display_product_markup = false %}</code> between the <code>&lt;zp_additional_integration&gt;...&lt;/zp_additional_integration&gt;</code> tags within the following Snippet files of the currently published theme:</p>
+<p class=""no-margin""></p>
+<ul>
+<li>
+<p class=""no-margin"">best-value-horizontal-view.zipifypages.liquid</p>
+</li>
+<li>
+<p class=""no-margin"">best-value-offer-view.zipifypages.liquid</p>
+</li>
+<li>
+<p class=""no-margin"">best-value-view.zipifypages.liquid</p>
+</li>
+<li>
+<p class=""no-margin"">offer-box-view.zipifypages.liquid</p>
+</li>
+<li>
+<p class=""no-margin"">product-view.zipifypages.liquid</p>
+</li>
+<li>
+<p class=""no-margin"">three-products-view.zipifypages.liquid</p>
+</li>
+<li>
+<p class=""no-margin"">recharge-subscription-view.zipifypages.liquid</p>
+</li>
+</ul>
+</li>
+</ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/477663566/5933a41ab61ecd059c7afbb7/image.png?expires=1719475200&amp;signature=c787b281f291f503901593fe837f9164439f0e619c36f5439c06efabdb8140d3"" alt=""Image""></div><ul>
+<li>
+<p class=""no-margin"">Save the changes to each file.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Check Page Source</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">To ensure that ZP Schema is successfully disabled, go to the page source of the published page that contains the appropriate product sections and search for <code>type=""application/ld+json""&gt;{""@context"":""http:\/\/schema.org\</code>.</p>
+</li>
+<li>
+<p class=""no-margin"">Any attributes related to this should be removed as well.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Additional Resources</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">You can use the <a href=""https://validator.schema.org/"" target=""_blank"" class=""intercom-content-link"">Schema.org validator tool</a> to check the type(s) of Schema Markup data being included on any page on your website.</p>
+</li>
+<li>
+<p class=""no-margin"">To generate additional schema markup data for different page types, you can use a generator like <a href=""https://www.rankranger.com/schema-markup-generator"" target=""_blank"" class=""intercom-content-link"">Rank Ranger's Schema Markup Generator</a>.</p>
+</li>
+</ul><p class=""no-margin"">By following these steps, you can effectively disable or hide the QA section on your Zipify Page.</p>"
+9435891,"<h1>How to Create a Sign Up Page with Rotating Images</h1> <p class=""no-margin"">To create a sign up page with rotating images, you can use GIFs. Follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Create a GIF from your images using online tools.</p>
+</li>
+<li>
+<p class=""no-margin"">Upload the GIF in the builder to display rotating images.</p>
+</li>
+</ol><p class=""no-margin"">Note: The builder does not create GIFs, so you need to make one before uploading.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">For more detailed instructions, refer to our <a href=""#"" target=""_blank"" class=""intercom-content-link"">Knowledge Base</a>.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1037654802/33e59ef0ae51dd639873aab2/image.png?expires=1719475200&amp;signature=c29fd94adf080aaf433d19210ee826c157dfc7d233e9ef3b8bcd53da1650292a""></div>"
+9435892,"<h1>How to Create a Sign Up Page with Rotating Images</h1> <p class=""no-margin"">To create a sign-up page with rotating images, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin""><b>Main Image Settings</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Select your image and access the main tab in the sidebar.</p>
+</li>
+<li>
+<p class=""no-margin"">Your image's file name and original dimensions will be displayed.</p>
+</li>
+<li>
+<p class=""no-margin"">You can crop the image or choose a different image.</p>
+</li>
+<li>
+<p class=""no-margin"">Add alt text for the image.</p>
+</li>
+<li>
+<p class=""no-margin"">Set a destination for the image to make it clickable.</p>
+</li>
+<li>
+<p class=""no-margin"">Set a hover state effect and enable a badge for the image.</p>
+</li>
+<li>
+<p class=""no-margin""><a href=""https://help.zipify.com/en/articles/438206-the-button-element-zipify-pages#h_1ba4caa526"" target=""_blank"" class=""intercom-content-link"">Destination options</a></p>
+</li>
+</ol><div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/906769975/05392648c638b816339354c6/image.png?expires=1719475200&amp;signature=cfc136819c649899680a22c3a23755d1d7f663f90dbeac363af2a2dd4398fbbc"" alt=""Main Image Settings""></div><ol>
+<li>
+<p class=""no-margin""><b>Crop &amp; Rotate</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Click the ""Crop Image"" button to crop or rotate the image.</p>
+</li>
+<li>
+<p class=""no-margin"">Presets for common aspect ratios are available.</p>
+</li>
+<li>
+<p class=""no-margin"">Rotate the image clockwise or counterclockwise as needed.</p>
+</li>
+</ol><div class=""intercom-container""><img src=""https://zipify-b4af458812bb.intercom-attachments-1.com/i/o/779508510/707ed257362cf562b7b92155/yssd3q1.png?expires=1719475200&amp;signature=9ba8d2e6e907d89aafcf9c0d6180a40834c93c6f29644d645d781e33dfdc945d"" alt=""Crop &amp; Rotate Image""></div><ol>
+<li>
+<p class=""no-margin""><b>Change Image</b>:</p>
+</li>
+<li>
+<p class=""no-margin"">Click the ""Change Image"" button to select a different image or upload a new one.</p>
+</li>
+<li>
+<p class=""no-margin"">Confirm once you're satisfied with the image appearance to add it to the image element.</p>
+</li>
+</ol><div class=""intercom-container""><img src=""https://zipify-b4af458812bb.intercom-attachments-1.com/i/o/779508517/f3df65721c44c94ed86782e3/Rbzuix3.png?expires=1719475200&amp;signature=16664b170ff72378ebcefd2d0dd1a5177d1ad730390f88ce2a67f368126569f6"" alt=""Change Image""></div><p class=""no-margin"">By following these steps, you can set up a sign-up page with rotating images on Zipify.</p>"
+9435904,"<h1>How to Adjust Element Visibility in Zipify</h1> <p class=""no-margin"">To adjust element visibility in Zipify, follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin"">Toggle the 'Show on Mobile' setting in the sidebar for the element.</p>
+</li>
+<li>
+<p class=""no-margin"">Update the page to apply the changes.</p>
+</li>
+<li>
+<p class=""no-margin"">For different layouts on mobile and desktop, use separate sections with visibility settings.</p>
+</li>
+</ol><p class=""no-margin"">By following these steps, you can control the visibility of elements on different devices in Zipify.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1038792071/1c9c854ede374f1215116f1a/image.png?expires=1719475200&amp;signature=cd961e0274a60421683a97db10fb71079916528b8073a9cf2b1f773c884cf907""></div>"
+9435907,"<h1>How to Troubleshoot UTM Tracking Parameters Not Passing to Contact Profiles</h1> <p class=""no-margin"">To troubleshoot UTM tracking parameters not passing to contact profiles, you can follow these steps:</p>
+<p class=""no-margin""></p>
+<ol>
+<li>
+<p class=""no-margin""><b>Check the URL</b>: Make sure that the UTM parameters are correctly added to the URL. They should look something like this: <code>?utm_source=facebook&amp;utm_medium=cpc&amp;utm_campaign=summer_sale</code>.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Check the Link</b>: Ensure that the link you are using to direct traffic to your site includes the UTM parameters. If the link is missing the parameters, they will not be tracked.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Test the Link</b>: Click on the link with the UTM parameters yourself and see if they are being passed correctly. You can use tools like the Google Analytics Real-Time reports to check if the data is being captured.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Check for Typos</b>: Make sure there are no typos in the UTM parameters. Even a small mistake can prevent the tracking from working properly.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Use a Link Validator</b>: You can use online tools like the Google Campaign URL Builder to generate properly formatted URLs with UTM parameters.</p>
+</li>
+<li>
+<p class=""no-margin""><b>Clear Cache</b>: Sometimes, clearing your browser cache can help resolve tracking issues.</p>
+<p class=""no-margin""></p>
+</li>
+</ol><p class=""no-margin"">If you have checked all of the above and are still experiencing issues, you may want to reach out to Zipify's support team for further assistance.</p>
+<p class=""no-margin""></p>
+<p class=""no-margin"">For more information, you can refer to the <a href=""https://zipify.com/documentation/"" target=""_blank"" class=""intercom-content-link"">Zipify documentation</a>.</p>"
+9435911,"<h1>For an unknwon reason, videos aren't playing on the lander</h1> <p class=""no-margin""></p>
+<p class=""no-margin"">The user reported that videos were not playing on the lander. The assistant checked and confirmed that the videos were playing on their end. The user mentioned specific videos related to donations before the FAQ section. The assistant noted that the section might not be visible on desktop and provided a link to a video demonstrating the issue.</p>
+<p class=""no-margin""></p>
+<div class=""intercom-container""><img src=""https://downloads.intercomcdn.com/i/o/1037973106/ac31f12988dc3b4d939a9727/a61864e7-d6f1-4541-b582-16333f3c8412?expires=1719475200&amp;signature=e4cf1a8a65c8578e2d8373373969f84285ec821df5fd3ea56950ef5eed31e89f""></div>"
