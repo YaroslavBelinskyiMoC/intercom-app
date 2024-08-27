@@ -40,7 +40,7 @@ class DatabaseHandler {
             const embeddings = new OpenAIEmbeddings({
                 apiKey: cfg.OPENAI_API_KEY,
                 batchSize: 512, // Default value if omitted is 512. Max is 2048
-                model: "gpt-4",
+                model: "text-embedding-ada-002",
             });
 
             const typeormVectorStore = await TypeORMVectorStore.fromDataSource(
@@ -50,7 +50,11 @@ class DatabaseHandler {
 
             await typeormVectorStore.ensureTableInDatabase();
             log.info(`productsJson length: ${productsJson.length}`);
-            await typeormVectorStore.addDocuments(productsJson);
+            await Promise.all(
+                productsJson.map(async (product) => {
+                    await typeormVectorStore.addDocuments([product]);
+                })
+            );
             log.info("Upload DONE");
         } catch (err) {
             log.error(err.message);

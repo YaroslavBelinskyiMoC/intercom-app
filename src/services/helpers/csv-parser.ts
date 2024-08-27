@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import * as path from 'path';
 import csvParser from 'csv-parser';
 
 interface CSVRow {
@@ -13,8 +14,12 @@ interface JSONOutput {
     };
 }
 
-const csvFilePaths = ['../../dataFiles/zipify-pages.csv', '../../dataFiles/OCU.csv']; // Paths to your CSV files
-const outputFilePath = '../../dataFiles/output.ts';
+const directoryPath = path.resolve(__dirname, '../../dataFiles');
+const ocuPath = path.join(directoryPath, 'OCU.csv');
+const pagesPath = path.join(directoryPath, 'zipify-pages.csv');
+const outputFilePath = path.join(directoryPath, 'output.ts');
+
+const csvFilePaths = [ocuPath, pagesPath];
 
 const results: JSONOutput[] = [];
 
@@ -46,18 +51,16 @@ const parseCSVFiles = async () => {
             await parseCSVFile(filePath);
         }
 
+        // Construct the TypeScript content
         const tsContent = `const articles = ${JSON.stringify(results, null, 2)};\n\nexport default articles;`;
 
-        fs.writeFile(outputFilePath, tsContent, (err) => {
-            if (err) {
-                console.error('Error writing TypeScript file:', err);
-            } else {
-                console.log('TypeScript file has been saved successfully.');
-            }
-        });
+        // Write to the TypeScript file asynchronously
+        await fs.promises.writeFile(outputFilePath, tsContent);
+        console.log('TypeScript file has been saved successfully.');
+
     } catch (err) {
-        console.error('Error parsing CSV files:', err);
+        console.error('Error during processing:', err);
     }
 };
 
-parseCSVFiles();
+export default parseCSVFiles;
