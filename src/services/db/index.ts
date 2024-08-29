@@ -54,9 +54,7 @@ class DatabaseHandler {
 
       // Initialize the tokenizer for the model
       const tokenizer = encoding_for_model("text-embedding-ada-002");
-
-      const MAX_TOKENS = 8192; // Maximum tokens for the "text-embedding-ada-002" model
-
+      const MAX_TOKENS = 7500; // Maximum tokens for the "text-embedding-ada-002" model
       const textDecoder = new TextDecoder("utf-8");
 
       // Function to split the document into chunks if it exceeds MAX_TOKENS
@@ -71,27 +69,21 @@ class DatabaseHandler {
         let start = 0;
 
         while (start < tokens.length) {
-          // Find the end index that fits within maxChunkSize
           let end = start + maxChunkSize;
 
-          // Ensure the end index does not exceed the total number of tokens
           if (end > tokens.length) {
             end = tokens.length;
           }
 
-          // Decode tokens back to text for the chunk using TextDecoder
           const chunkTokens = tokens.slice(start, end);
-          const decodedChunk = textDecoder.decode(new Uint8Array(chunkTokens), {
-            stream: true,
-          });
+          const decodedChunk = textDecoder.decode(
+            tokenizer.decode(chunkTokens),
+          );
 
-          // Clean the decoded string to remove any null characters or invalid sequences
           const cleanChunk = decodedChunk.replace(/\u0000/g, "").trim();
 
-          // Push the cleaned and trimmed string into the chunks array
           chunks.push(cleanChunk);
 
-          // Move to the next chunk
           start = end;
         }
 
@@ -131,7 +123,6 @@ class DatabaseHandler {
             const embeddingsResult = await embeddings.embedDocuments([
               chunkedDocument.pageContent,
             ]);
-
             if (
               Array.isArray(embeddingsResult) &&
               embeddingsResult.length > 0
