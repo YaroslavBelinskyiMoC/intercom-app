@@ -207,7 +207,7 @@ class DatabaseHandler {
       const embeddings = new OpenAIEmbeddings({
         apiKey: cfg.OPENAI_API_KEY,
         batchSize: 512, // Default value if omitted is 512. Max is 2048
-        model: "text-embedding-3-large",
+        model: "text-embedding-ada-002",
       });
 
       const typeormVectorStore = await TypeORMVectorStore.fromDataSource(
@@ -219,9 +219,9 @@ class DatabaseHandler {
 
       const results = await typeormVectorStore.similaritySearchWithScore(
         param,
-        30,
+        3,
       );
-      log.info(results);
+      //   log.info(results);
 
       await getFormattedAnswer(param);
 
