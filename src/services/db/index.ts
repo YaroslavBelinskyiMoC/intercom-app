@@ -223,9 +223,9 @@ class DatabaseHandler {
       );
       //   log.info(results);
 
-      await getFormattedAnswer(param);
+      const answer = await getFormattedAnswer(param, results[0]);
 
-      return results;
+      return answer;
     } catch (err) {
       log.error(err);
       return [];
