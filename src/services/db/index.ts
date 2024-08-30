@@ -171,7 +171,7 @@ class DatabaseHandler {
                     metadata: product.metadata,
                     embedding: vector as any,
                   } as any,
-                ]); 
+                ]);
               } catch (error) {
                 log.error(
                   `Failed to insert vector for product with link ${product.metadata.link}:`,
@@ -202,7 +202,7 @@ class DatabaseHandler {
     }
   }
 
-  public async search(param: string): Promise<any[]> {
+  public async search(param: string): Promise<any> {
     try {
       const embeddings = new OpenAIEmbeddings({
         apiKey: cfg.OPENAI_API_KEY,
@@ -221,7 +221,7 @@ class DatabaseHandler {
         param,
         3,
       );
-      //   log.info(results);
+      log.info(results);
 
       const answer = await getFormattedAnswer(param, results[0]);
 

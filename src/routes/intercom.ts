@@ -26,19 +26,22 @@ router.post("/submit", async (request: Request, response: Response) => {
   try {
     log.info("Submit clicked");
     if (request.body.component_id == "submit-new-issue") {
-      const userQuestion = request.body.input_values.description;
-      const gptAnswer = await dbClient.search(request.body.userQuestion);
+      const userQuestion = request.body.input_values.your_request;
+      const gptAnswer = await dbClient.search(userQuestion);
 
-      log.info("user question:", request.body.input_values);
-      log.info(gptAnswer);
+      log.info(`user question: ${userQuestion}`);
+      console.log(gptAnswer);
       log.info(request.body.current_canvas.content.components);
 
-      const newCanvas = mapGptAnswerToCanvas(gptAnswer);
-      const userQuestionCanvas = userQuestionGenerator(userQuestion);
+      if (gptAnswer !== null || gptAnswer !== undefined) {
+        const newCanvas = mapGptAnswerToCanvas(gptAnswer);
 
-      newCanvas.shift(userQuestionCanvas);
-      newCanvas.push(endingCanvas);
-      response.send(newCanvas);
+        const userQuestionCanvas = userQuestionGenerator(userQuestion);
+
+        newCanvas.shift(userQuestionCanvas);
+        newCanvas.push(endingCanvas);
+        response.send(newCanvas);
+      }
     } else if (request.body.component_id == "submit-another-issue") {
       const userQuestion = request.body.input_values.description;
       const gptAnswer = await dbClient.search(request.body.userQuestion);

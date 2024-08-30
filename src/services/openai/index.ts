@@ -13,7 +13,7 @@ const openai = new OpenAI({
 async function getFormattedAnswer(param, context) {
   // Special prompt for OpenAI
   const systemMessage = `
-    YOU DONT need to create your own answer, you just need to format the text.
+    NEVER create your own answer, you must format the text according to the rules below!.
     You need to format the following context that contains HTML tags:
     ${context[0].pageContent}
     You need to get text and links from the context according to HTML tags, parse them one by one in order how you find them in text and add them into the following format:
@@ -37,15 +37,9 @@ async function getFormattedAnswer(param, context) {
       temperature: 0,
       model: "gpt-4o",
     });
-    if (answer.choices[0].message.content !== null) {
-      const parsedFormattedAnswer = JSON.parse(
-        answer.choices[0].message.content,
-      );
-      // log.info(parsedFormattedAnswer);
-      return parsedFormattedAnswer;
-    } else {
-      log.info("No content available to parse.");
-    }
+    const textAnswer = answer?.choices[0]?.message?.content;
+    // log.info(textAnswer);
+    return textAnswer;
   } catch (error) {
     log.error("Error:", error);
   }
