@@ -48,55 +48,49 @@ const initialCanvas = {
   },
 };
 
-const endingCanvas = {
-  canvas: {
-    content: {
-      components: [
-        {
-          type: "spacer",
-          size: "m",
-        },
-        {
-          type: "divider",
-        },
-        {
-          type: "spacer",
-          size: "m",
-        },
-        {
-          type: "textarea",
-          id: "description",
-          label: "🙂 I’m here to help. Just ask!",
-          placeholder: "Input here your question here...",
-        },
-        {
-          type: "button",
-          id: "submit-another-issue",
-          label: "Ask a follow up question",
-          style: "primary",
-          action: {
-            type: "submit",
-          },
-        },
-        {
-          type: "text",
-          text: "You can restart this dialogue and clear the history",
-          style: "paragraph",
-          bottom_margin: "none",
-        },
-        {
-          type: "button",
-          id: "restart_button",
-          label: "Restart",
-          style: "primary",
-          action: {
-            type: "submit",
-          },
-        },
-      ],
+const endingCanvas = [
+  {
+    type: "spacer",
+    size: "m",
+  },
+  {
+    type: "divider",
+  },
+  {
+    type: "spacer",
+    size: "m",
+  },
+  {
+    type: "textarea",
+    id: "description",
+    label: "🙂 I’m here to help. Just ask!",
+    placeholder: "Input here your question here...",
+  },
+  {
+    type: "button",
+    id: "submit-another-issue",
+    label: "Ask a follow up question",
+    style: "primary",
+    action: {
+      type: "submit",
     },
   },
-};
+  {
+    type: "text",
+    text: "You can restart this dialogue and clear the history",
+    style: "paragraph",
+    bottom_margin: "none",
+  },
+  {
+    type: "button",
+    id: "restart_button",
+    label: "Restart",
+    style: "primary",
+    action: {
+      type: "submit",
+    },
+  },
+];
 
 function userQuestionGenerator(userQuestion: string) {
   const components = [
