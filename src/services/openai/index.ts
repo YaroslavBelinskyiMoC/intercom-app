@@ -19,7 +19,7 @@ async function getFormattedAnswer(param, context) {
     You need to get text and links from the context according to HTML tags, parse them one by one in order how you find them in text and add them into the following format:
     "text": 'text you found', "imageLink": 'image link you found', "videoLink": 'video link you found', "siteLink": 'site link you found'. 
     Example how it must look:
-    [ "text": "text that you found in the context", "imageLink": "image that was right after the text that you found previously", "text": "the next text after the link", "siteLink": "link after the previous text", ...]
+    [ {"text": "text that you found in the context"}, {"imageLink": "image that was right after the text that you found previously"}, {"text": "the next text after the link"}, {"siteLink": "link after the previous text"}, ...]
     `;
   //   console.log(context[0].pageContent);
   try {
@@ -37,8 +37,11 @@ async function getFormattedAnswer(param, context) {
       temperature: 0,
       model: "gpt-4o",
     });
-    const textAnswer = answer?.choices[0]?.message?.content;
+    let textAnswer = answer?.choices[0]?.message?.content;
     // log.info(textAnswer);
+    if (textAnswer !== undefined || textAnswer !== null) {
+      textAnswer = JSON.parse(textAnswer as string);
+    }
     return textAnswer;
   } catch (error) {
     log.error("Error:", error);
