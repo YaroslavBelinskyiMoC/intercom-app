@@ -1,6 +1,9 @@
 import { Router, Request, Response } from "express";
 import {
-  initialCanvas, endingCanvas, userQuestionGenerator
+  initialCanvas,
+  endingCanvas,
+  userQuestionGenerator,
+  mapGptAnswerToCanvas,
 } from "../components";
 import { logger } from "../logger";
 import { dbClient } from "../services/db";
@@ -22,21 +25,34 @@ router.post("/initialize", (request: Request, response: Response) => {
 router.post("/submit", async (request: Request, response: Response) => {
   try {
     log.info("Submit clicked");
-    if (request.body.component_id == "submit-issue-form") {
+    if (request.body.component_id == "submit-new-issue") {
       const userQuestion = request.body.input_values.description;
       const gptAnswer = await dbClient.search(request.body.userQuestion);
+
       log.info("user question:", request.body.input_values);
-      log.info(gptAnswer)
+      log.info(gptAnswer);
       log.info(request.body.current_canvas.content.components);
-      const canvasAnswer = {
-        canvas: {
-          content: request.body.current_canvas.content,
-        },
-      };
-      const array = canvasAnswer.canvas.content.components;
-      
-      const newComponents = additionalAnswerGenerator(input);
-      array.splice(array.length - 12, 0, ...newComponents);
+
+      const newCanvas = mapGptAnswerToCanvas(gptAnswer);
+      const userQuestionCanvas = userQuestionGenerator(userQuestion);
+
+      newCanvas.shift(userQuestionCanvas);
+      newCanvas.push(endingCanvas);
+      response.send(newCanvas);
+    } else if (request.body.component_id == "submit-another-issue") {
+      const userQuestion = request.body.input_values.description;
+      const gptAnswer = await dbClient.search(request.body.userQuestion);
+
+      log.info("user question:", request.body.input_values);
+      log.info(gptAnswer);
+      log.info(request.body.current_canvas.content.components);
+
+      const newCanvas = mapGptAnswerToCanvas(gptAnswer);
+      const userQuestionCanvas = userQuestionGenerator(userQuestion);
+
+      const canvasAnswer = request.body.current_canvas.content.components; // old components
+      newCanvas.shift(userQuestionCanvas);
+      canvasAnswer.splice(canvasAnswer.length - 7, 0, ...newCanvas);
       response.send(canvasAnswer);
     } else {
       response.send(initialCanvas);
