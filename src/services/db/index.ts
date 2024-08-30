@@ -169,9 +169,9 @@ class DatabaseHandler {
                   {
                     pageContent: product.pageContent,
                     metadata: product.metadata,
-                    embedding: vector as any, // Type assertion to bypass TypeScript's error
+                    embedding: vector as any,
                   } as any,
-                ]); // Type assertion to bypass TypeScript's error
+                ]); 
               } catch (error) {
                 log.error(
                   `Failed to insert vector for product with link ${product.metadata.link}:`,

@@ -41,7 +41,7 @@ async function getFormattedAnswer(param, context) {
       const parsedFormattedAnswer = JSON.parse(
         answer.choices[0].message.content,
       );
-      log.info(parsedFormattedAnswer);
+      // log.info(parsedFormattedAnswer);
       return parsedFormattedAnswer;
     } else {
       log.info("No content available to parse.");
