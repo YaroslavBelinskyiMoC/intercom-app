@@ -28,20 +28,21 @@ router.post("/submit", async (request: Request, response: Response) => {
     if (request.body.component_id == "submit-new-issue") {
       const userQuestion = request.body.input_values.your_request;
       const gptAnswer = await dbClient.search(userQuestion);
+      //   const gptAnswer = [];
 
-      log.info(`user question: ${userQuestion}`);
-      console.log(typeof gptAnswer);
-      log.info(request.body.current_canvas.content.components);
+      console.log(`user question: ${userQuestion}`);
 
       if (gptAnswer !== null || gptAnswer !== undefined) {
         const newCanvas = mapGptAnswerToCanvas(gptAnswer);
+        // console.log("NEW CANVAS");
+        // console.log(newCanvas);
         const userQuestionCanvas = userQuestionGenerator(userQuestion);
 
-        newCanvas.shift(userQuestionCanvas);
-        newCanvas.concat(endingCanvas);
+        // newCanvas.shift(userQuestionCanvas); //  ?
+        // newCanvas.concat(endingCanvas); // ?
         const combinedCanvas = [
           ...userQuestionCanvas,
-          //   ...newCanvas,
+          ...newCanvas,
           ...endingCanvas,
         ];
 
@@ -52,24 +53,42 @@ router.post("/submit", async (request: Request, response: Response) => {
             },
           },
         };
+        console.log("GENERATED CANVAS");
         console.log(generatedCanvas.canvas.content.components);
         response.send(generatedCanvas);
+        // response.send(initialCanvas);
       }
     } else if (request.body.component_id == "submit-another-issue") {
       const userQuestion = request.body.input_values.description;
-      const gptAnswer = await dbClient.search(request.body.userQuestion);
+      const gptAnswer = await dbClient.search(userQuestion);
 
-      log.info("user question:", request.body.input_values);
-      log.info(gptAnswer);
+      log.info(`user question: ${userQuestion}`);
       log.info(request.body.current_canvas.content.components);
 
-      const newCanvas = mapGptAnswerToCanvas(gptAnswer);
-      const userQuestionCanvas = userQuestionGenerator(userQuestion);
+      if (gptAnswer !== null || gptAnswer !== undefined) {
+        const newCanvas = mapGptAnswerToCanvas(gptAnswer);
+        // console.log("NEW CANVAS");
+        // console.log(newCanvas);
+        const userQuestionCanvas = userQuestionGenerator(userQuestion);
 
-      const canvasAnswer = request.body.current_canvas.content.components; // old components
-      newCanvas.shift(userQuestionCanvas);
-      canvasAnswer.splice(canvasAnswer.length - 7, 0, ...newCanvas);
-      response.send(canvasAnswer);
+        // newCanvas.shift(userQuestionCanvas);
+        const combinedCanvas = [...userQuestionCanvas, ...newCanvas];
+
+        const canvasAnswer = request.body.current_canvas.content.components; // old components
+        canvasAnswer.splice(canvasAnswer.length - 7, 0, ...combinedCanvas);
+
+        const generatedCanvas = {
+          canvas: {
+            content: {
+              components: canvasAnswer,
+            },
+          },
+        };
+
+        console.log("GENERATED CANVAS");
+        console.log(generatedCanvas);
+        response.send(generatedCanvas);
+      }
     } else {
       response.send(initialCanvas);
     }

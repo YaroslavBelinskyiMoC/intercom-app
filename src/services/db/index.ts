@@ -221,7 +221,7 @@ class DatabaseHandler {
         param,
         3,
       );
-      log.info(results);
+      // log.info(results);
 
       const answer = await getFormattedAnswer(param, results[0]);
 

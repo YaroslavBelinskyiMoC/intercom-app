@@ -130,9 +130,29 @@ function userQuestionGenerator(userQuestion: string) {
   return components;
 }
 
+function imageCanvasGenerator(imageLink) {
+  const components = [
+    {
+      type: "spacer",
+      size: "m",
+    },
+    {
+      type: "image",
+      width: 430,
+      height: 200,
+      url: imageLink,
+    },
+    {
+      type: "spacer",
+      size: "m",
+    },
+  ];
+  return components;
+}
+
 function mapGptAnswerToCanvas(inputArray) {
   return inputArray
-    .map((item) => {
+    .flatMap((item) => {
       if (item.text) {
         return {
           type: "text",
@@ -146,12 +166,7 @@ function mapGptAnswerToCanvas(inputArray) {
           style: "paragraph",
         };
       } else if (item.imageLink) {
-        return {
-          type: "image",
-          width: 400,
-          height: 300,
-          url: item.imageLink,
-        };
+        return imageCanvasGenerator(item.imageLink); // This returns an array that flatMap will flatten
       }
       return null;
     })

@@ -13,15 +13,16 @@ const openai = new OpenAI({
 async function getFormattedAnswer(param, context) {
   // Special prompt for OpenAI
   const systemMessage = `
-    NEVER create your own answer, you must format the text according to the rules below!.
-    You need to format the following context that contains HTML tags:
-    ${context[0].pageContent}
-    You need to get text and links from the context according to HTML tags, parse them one by one in order how you find them in text and add them into the following format:
-    "text": 'text you found', "imageLink": 'image link you found', "videoLink": 'video link you found', "siteLink": 'site link you found'. 
-    Example how it must look:
-    [ {"text": "text that you found in the context"}, {"imageLink": "image that was right after the text that you found previously"}, {"text": "the next text after the link"}, {"siteLink": "link after the previous text"}, ...]
-    `;
-  //   console.log(context[0].pageContent);
+  You are an assistant for Zipify documentation question-answering tasks.
+  Use the following HTML pieces of retrieved context to answer the question. In these pieces you can find images and other links.
+  You have to show links, images in your answer, if you got them in retrieved context.
+  Your generated text and links from the context should be added into the following format:
+  Example how it MUST look:
+  [ {"text": "text you generated answer"}, {"imageLink": "image link you found"}, {"siteLink": "site url you found"}, {"imageLink": "image link you found"}, ...]
+  If you don't retrieved context - write 'None'.
+  If you don't have relevant answer in retrieved context - write 'None'
+  You have not to use information from anything other than the retrieved context.
+  Retrieved context: ${context[0].pageContent}`;
   try {
     const answer = await openai.chat.completions.create({
       messages: [
@@ -38,9 +39,10 @@ async function getFormattedAnswer(param, context) {
       model: "gpt-4o",
     });
     let textAnswer = answer?.choices[0]?.message?.content;
-    // log.info(textAnswer);
+
     if (textAnswer !== undefined || textAnswer !== null) {
       textAnswer = JSON.parse(textAnswer as string);
+      console.log(textAnswer);
     }
     return textAnswer;
   } catch (error) {
