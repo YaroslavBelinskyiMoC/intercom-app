@@ -19,6 +19,10 @@ server.use(bodyParser.urlencoded({ extended: true }));
 server.use('/intercom', intercomRoutes);
 server.use('/articles', articlesRoutes);
 
+server.get('/health-check', (req, response) => {
+  response.status(200).send('OK');
+})
+
 server.listen(process.env.PORT, () => {
   log.info("Your app is listening on port " + process.env.PORT);
 });
