@@ -6,6 +6,8 @@ import { databaseConfig } from "./config";
 import { cfg } from "../../config/env";
 import { logger } from "../../logger";
 import getFormattedAnswer from "../openai";
+import getGoogleSheetData from "../google";
+import googleSheetData from "../google/output.json";
 
 const log = logger(__filename);
 
@@ -50,6 +52,10 @@ class DatabaseHandler {
       );
 
       await typeormVectorStore.ensureTableInDatabase();
+
+      // await getGoogleSheetData();
+      // await typeormVectorStore.addDocuments(googleSheetData);
+
       log.info(`productsJson length: ${productsJson.length}`);
 
       // Initialize the tokenizer for the model

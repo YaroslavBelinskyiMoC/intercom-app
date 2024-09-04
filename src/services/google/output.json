@@ -1,0 +1,206 @@
+[
+  {
+    "pageContent": "Is there a way we can stop billing but still have access to the pages we have built in the past even though we're not using them anymore? Or can we downgrade to a free plan just to have the page info still?: <p>Thank you for contacting Zipify support! Unfortunately, there is not a way to save your pages and be on a free plan. If you cancel your subscription your pages will be deleted from our servers after 90 days.</p><p>If you cancel the subscription then the pages you published will still be in the <b>Online Store &gt; Pages</b> section of your Shopify admin. However, once you delete the app then the pages will lack the necessary code from the ZP app to appear and function correctly. Any unpublished pages will be stored on our servers for 90 days, if you reinstall the app to the same store in that time period your pages and settings will be restored.</p><p>Hope this helps, if you have any other questions just let us know!</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Our buybox is not showing: <p>All you need to do <b>after </b>you publish a new theme is to click the \"<b>Refresh Assets</b>\" button to add the code to your new theme and have your pages show and function correctly once again.</p><p>This can be done by navigating to <b>Settings &gt; General &gt; Advanced Settings &gt; Application Assets Management: </b></p><img src=\"https://downloads.intercomcdn.com/i/o/463191204/846c4b721143204f8f1c57ac/image.png\"><p>I have prepared this short video for you showing the steps: <a href=\"https://www.screencast.com/t/0QrpzpKGvP\">https://www.screencast.com/t/0QrpzpKGvP</a></p><p>Hope this helps! Please let me know if this corrects the formatting.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Remove Product Section on a Page: <p>The Dynamic Product Section block can't be removed but can be hidden with the block's visibility settings:</p><img src=\"https://downloads.intercomcdn.com/i/o/914842306/fc1dd6c9e477079771aa3139/image.png\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Is there any way to do an SMS Opt-in form only?: <p>Our built-in forms don't have the option to be for SMS only. Your best option would most likely be to embed a form to the page using the available Scripts section within the page constructor and/or using the HTML block.</p><p>You can find the HTML block in the Misc section of our page blocks:</p><img src=\"https://downloads.intercomcdn.com/i/o/710575427/08d84faaae0427f69abe1558/image.png\"><p>Please see our help article on this block as well: <a href=\"https://help.zipify.com/zipify-pages-tutorials-and-documentation/page-blocks/zipify-pages-unique-blocks-html-block\">HTML Block</a>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Enable Download or Print Option for Coloring Book Pictures: <p>To enable users to download or print coloring book pictures, set up images to redirect to a page with a larger version of the image for printing or a PDF download link. This allows kids to easily access and print the pictures for coloring at home.</p><img src=\"https://downloads.intercomcdn.com/i/o/910240387/63cd3ee24d02c8314a24a73e/eec69595-3e5a-4c28-9c3a-90c891c51bbd\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Why is my GIF not running in the image module preview?: <p>If you're using an animated GIF file, avoid using the image cropper option in the image module. This will prevent the GIF from being converted to a static PNG, allowing the animation to play in the preview.</p><p>Additionally, ensure that the GIF file size does not exceed 15MB for optimal performance.</p><img src=\"https://downloads.intercomcdn.com/i/o/913552554/ee3e8b401352fed004fd8572/image.png?expires=1714520620&amp;signature=ffda8018d550aa39f64c143c747f962cbf73c5afa497bf24d9b8bbe951957e35\" alt=\"GIF not running in preview\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Make a Video Autoplay on Shopify Homepage: <p>To make a video autoplay on Shopify, you can add the video using HTML code with autoplay and loop attributes. The following HTML code snippet can be used:</p><pre><code>&lt;video style=\"max-width: 100%; height: auto;\" controls muted playsinline autoplay loop&gt; &lt;source src=\"your_video_url.mp4\" type=\"video/mp4\"&gt; &lt;/video&gt;</code></pre><p>Adjust the max-width and height parameters as needed. Add this code in an HTML section on your Shopify homepage to achieve the autoplay effect.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Does Zipify Pages have CMS capabilities for bulk creating landing pages from a database like Webflow?: <p>Zipify Pages does not currently offer CMS capabilities for bulk creating pages with dynamic content extracted from a database. Zipify Pages is primarily designed as a page builder for Shopify stores, focusing on individual page creation and customization rather than managing bulk content dynamically from a database.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Funnel Widget Not Showing on Product Page: <p>To resolve the issue of the funnel widget not showing on the product page, ensure it is correctly set up in the OneClickUpsell (OCU) dashboard and check theme compatibility. Troubleshoot using the OCU help section for step-by-step instructions.</p><p>1. Verify Widget Settings: Check if the widget is activated for the specific product.</p><p>2. Review Theme Compatibility: Ensure compatibility with your Shopify theme.</p><p>3. Inspect for Conflicts: Check for conflicts with other apps or custom code.</p><p>For detailed troubleshooting steps, visit the OCU help section on product page widget.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Cancel a Subscription: <p>If you want to cancel your subscription, you can do so by deleting the app from your Shopify store. Please note that any pending charges will still process even after the app is removed. Additionally, all Pages, Images, Javascript, and CSS code will be removed from our servers 90 days after you delete the Zipify Pages app from your store if it's not re-installed before then.</p><p>Your feedback is valuable to us, so we would appreciate it if you could fill out our <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfWUoWXT0rVZ5WPY1d9rbh5Qoq344zUu6fQIZF1NEzGAJIjGg/viewform\">Zipify Pages Cancellation Survey</a> to help us understand why you are no longer using the app. Thank you for trying out Zipify Pages, and we hope to see you again in the future!",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "do you have an option for free gift with purchase?: <p>While Zipify Pages does not directly handle sales promotions like free gifts with purchase, you can use OneClickUpsell (OCU) for this purpose. OCU allows you to set up post-purchase offers, including free gifts, based on the customer's cart content. Here's how you can use OCU for your promotion:</p><ul><li><b>Set Up Post-Purchase Offers</b>: Create offers that trigger after a purchase, such as offering a free gift.</li><li><b>Customization</b>: Customize your free gift promotion to match your branding and strategy.</li><li><b>Integration with Zipify Pages</b>: Promote your free gift offer on Zipify Pages and use OCU in the checkout process.</li></ul><p>OCU is a powerful tool to enhance your sales strategy and can seamlessly integrate with your Shopify store. You can install OCU from the Shopify app store and find more information in the FAQ page on Zipify's website. Reach out for support if needed.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Why is the upgrade charging $29 instead of $19 in the cross sell product setup?: <p>Looks like you don't have a discount setup for this product:<br><img src=\"https://downloads.intercomcdn.com/i/o/921443011/62133b6f7938ccf0fde32da8/1471aa0c-756e-4705-aef5-12b3e6e9bf94\"></p><p>And for your cross sell item, you are using a fixed discount which is not auto applied<br><img src=\"https://downloads.intercomcdn.com/i/o/921443600/8dcc644e3402f00bf0e25f5f/9dc71f34-a476-44e6-a936-bfde02dbef27\"></p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Is it possible to have a SEARCH BOX on our blog home page?: <p>Zipify Pages does not offer a direct feature to embed a search box within the pages created using its platform.</p><p>The hamburger menu appears on Tablets and Mobiles, displaying the menu options for the header.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Why are my changes not saving appropriately in Zipify pages?: <p>It's possible that the issue could be related to your browser. While working in Zipify pages, occasionally clearing your cache and restarting your browser session can help create a cleaner environment. Additionally, having multiple tabs open might cause similar issues.</p><p>I suggest clearing your cache and restarting your browser to see if that resolves the issue.</p><p>If you need anything else I will be here to assist.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Rewards Loyalty Recommendation??: <p>Regarding a recommendation for a rewards program that integrates well with Zipify Pages, while the official Zipify Pages integrations list does not specify a dedicated rewards program app, it does include integrations with several review apps like Stamped.io, YotPo, and Loox. These platforms often include or pair with loyalty and rewards features.</p><p>If you're looking for a dedicated rewards program, Shopify's app store has a variety of options. You might want to check out apps like Smile.io or LoyaltyLion, which are popular for their loyalty program features. Although not listed specifically in Zipify Pages integrations, these apps are widely used and may offer the functionality and user experience you're seeking.</p><p>Please note that while I can suggest these options based on their general popularity and compatibility with Shopify, it's essential to review each app's features and pricing to ensure they meet your specific needs and are compatible with Zipify Pages.</p><p>I hope this helps, and please let me know if you have any more questions or need further assistance!</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Product Page Editor Not Saving Work: <p>When experiencing issues with the product page editor not saving work, ensure only one tab is open, click 'failed to save' to force save, clear browser cache, or use incognito mode to resolve the problem.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Recommendation for Rotating Ticker Banner??: <p>I recommend trying the <a href=\"https://apps.shopify.com/quick-banner?search_id=79964a82-6b03-4dfd-a98c-ba9d1be96c6a&amp;surface_detail=moving+banner&amp;surface_inter_position=1&amp;surface_intra_position=4&amp;surface_type=search\">Quick Banner app</a> for a rotating ticker-like banner feature. If it doesn't meet your needs, consider reaching out to Shopify for further recommendations.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to create a two image column with a column size of 33%: <p>To create a two-image column with a column size of 33%, you can adjust the padding in the new builder. By adjusting the padding, you can control the width of the column and achieve the desired size. Here is an example of how you can do this:</p><img src=\"https://downloads.intercomcdn.com/i/o/920831450/fed4ebe52075d5d05fd42adf/image.png\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to change the image display on mobile?: If you would like to change the look of the mobile image you can create a block specifically for Mobile with the required settings. We have the option to hide blocks from device types allowing for unique looks for each device. You can access this \"<b>Visibility</b>\" option by clicking the pencil icon in a block's top corner. The option can be seen here in the sidebar: <img src=\"https://downloads.intercomcdn.com/i/o/918631269/230ae137170ff9a800ee8a3e/image.png\"> Using the built-in<b> preview modes</b>, you can see how it will look on different devices without needing to Update and view the published page each time you make an edit in the page editor: <a href=\"https://downloads.intercomcdn.com/i/o/165823417/369e5646835fd7780921460b/image.png\">[IMG_TAG]</a>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Can I link 5 products to Zipify product pages and the 6th product to a landing page?: <b>Linking Products:</b> Create a landing page for the 6th product in Zipify Pages. Use the 'Buy Box' feature to sell the product. <b>Redirect Setup:</b> In Shopify, set up a redirect from the product page URL to the custom landing page URL for the 6th product.",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "landing page buy box is off center on mobile: <p>Buy box is off on mobile when theme header/footer is enabled. The issue was resolved by temporarily disabling the theme header/footer. Our development team will work on fixing the theme conflict to ensure the buy box displays correctly with the theme header/footer enabled.</p><p>Further troubleshooting steps may include adding custom CSS to adjust the buy box positioning. If the issue persists, additional changes or adjustments may be necessary to ensure proper alignment on mobile devices.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Add a Search Bar to a Header: <p>To add a search bar to a header, link the magnifying glass icon to a separate search URL. Currently, there is no built-in store search option in Zipify Pages. You can submit a feature request for this functionality in future updates.</p><img src=\"https://downloads.intercomcdn.com/i/o/922305367/1e97aaa7a3dc5a9d8f6d6b13/zipify+search.png?expires=1714521672&amp;signature=b389eebbba7787717f6ff2c27f525a27100fcb6d7ac0d6e21ffd165569af5314\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to attach a collections page to a Shopify store: <p>At this time, you can't publish a page to the /collections URL in Shopify. Instead, create a collections-style page in Zipify Pages using blocks like collections or image + button. Link each image to a product page.</p><p>To set up the collection page, go to <b>Sales channels &gt; Online Store &gt; Navigation</b> in your Shopify admin. Edit the Menu(s) containing the collection link (e.g., Main Menu) to point to the new page.</p><p>For more details, refer to this Shopify article: <a href=\"https://help.shopify.com/en/manual/online-store/menus-and-links/editing-menus#edit-menu-item\">Editing Menus</a>.</p><p>Note that publishing to the /collections URL is planned for a future update. In the meantime, this workaround is effective. Reach out if you need further assistance with the setup.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Change the 'Continue Shopping' Link on Shopify Cart Page: <p>To change the 'Continue shopping' link on your Shopify Cart Page, you can modify the link in the cart.liquid file in your theme. Follow this <a href=\"https://community.shopify.com/c/shopify-design/how-to-change-continue-shopping-link-from-your-cart-page/td-p/817193\">guide</a> for detailed instructions.</p><img src=\"https://downloads.intercomcdn.com/i/o/923315678/24c604513f92bec182cb75d5/image.png\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Struggling with spacing on mobile page below menu header: <p>To fix white space below the menu header on a mobile page, adjust padding in the builder. If changes don't reflect on the actual phone, try adjusting hidden blocks and refreshing assets.</p><img src=\"https://downloads.intercomcdn.com/i/o/924430533/c63cc556976088db42c6297b/0e9e4fec-277c-4a6e-903c-e6c07e3f717a\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Request for Refund of Unused App Charges: <p>Since the fee has not yet been paid, I issued an app credit of $67 to offset the cost of the Zipify Pages app. The credit will appear on your Shopify bill to cover the pending charge.</p><p>Let us know if we can be of further assistance.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Add and Customize Images in a Section: <p>To add an image to a section, hover over the top section in the builder and click the + sign above it. Choose the Image section and click on 'Choose Image' in the sidebar to upload your image.</p><img src=\"https://downloads.intercomcdn.com/i/o/924305087/07d962466b07dcd834e7eabb/image.png\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Does Zipify Pages have the functionality to upgrade items in a customer's cart?: <b>Question</b>The customer contacted us to inquire about the functionality of upgrading items in a customer's cart using Zipify Pages.<br><b>Summary</b><br>Zipify Pages does not have the functionality to upgrade an item in a customer's cart.<br>OneClickUpsell offers pre-purchase, post-purchase, in checkout, and thank you page upsells.<br>OneClickUpsell has a 30-day trial, chat support, and an in-app onboarding wizard.<br>OneClickUpsell is mobile browsing optimized and offers split testing for upsell offers.<br>OneClickUpsell can be installed from the Shopify app store.",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to download a landing page in zip format: <p>You can share landing pages with another store using the Zipify Pages app. Only Landing Pages and Home Pages can be shared. Click on the \"More actions\" icon in the pages table and select the \"Share\" option. The shared page will appear in the other store's Zipify Pages app after importing. For more details, refer to the <a href=\"http://help.zipify.com/zipify-pages-tutorials-and-documentation/miscellaneous/zipify-pages-page-sharing-and-receiving\">Zipify Pages - Page Sharing and Receiving</a> article.</p><img src=\"https://downloads.intercomcdn.com/i/o/795544982/4f691c9306a7c8e0bda3575f/image.png\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Subscription plans discrepancy between Zipify website and dashboard: <p>If you notice a difference in subscription plans between the Zipify website and your dashboard, it may be due to using an older version of the Zipify Pages app. To access the updated plans, you will need to uninstall and then reinstall the app. Rest assured that you will not lose any of your existing pages during this process.</p><img src=\"https://downloads.intercomcdn.com/i/o/924385047/415ac409cadd72cc0ff7de71/image.png?expires=1714520886&amp;signature=d1099cd8f110adc5521affaae9e45cd8c4a9359da02631b6cd3d6053b9e6fb54\">",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Guidance on Choosing a Template for Testing Zipify Product Page: <p><b>Question:</b> The customer contacted us to seek guidance on which template to use for testing a Zipify product page against their own PDP for their best-selling product.</p><p><b>Summary:</b><br>Customer is looking to test a Zipify product page against their own PDP for their best-selling product.<br>They are seeking guidance on which template to use and if there is a best practices template available.<br>Teammate suggests checking out the company's blog for inspiration and recommends the Boom! Nectar/Gold Sales page or the Boom! Sun Product Page.<br>Customer is unable to find the Boom! Nectar/Gold page and teammate clarifies that it is only for landing pages.<br>Teammate closes the conversation and encourages the customer to reach out for further assistance.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Set Up Notifications for Contact Form Submissions: <p>To receive notifications when someone fills out the Contact Us form on your website, you need to set up this feature in your CRM system. Unfortunately, this cannot be done through Zipify. Check your CRM settings, such as Klaviyo, to configure the notification settings.</p><p>If you need further assistance, feel free to reach out to us. Don't forget to leave a review to share your experience with us!</p><a href=\"https://apps.shopify.com/zipifypages#modal-show=ReviewListingModal\">Leave a Review</a>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "Do you dispatch a custom event when a variant changes?: <p>Shopify triggers a custom JavaScript event named <b>variantChange</b> when a user changes a variant on a product page. This event can be utilized to update various elements on the page, such as price and image, based on the selected variant.</p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  },
+  {
+    "pageContent": "How to Delete Elements in Zipify Editor: <p>To delete elements in Zipify Editor, watch a video tutorial or contact support for assistance.</p><p><a href=\"https://www.screencast.com/t/uUp5XVBp\">Watch the video tutorial here</a></p>",
+    "metadata": {
+      "link": "https://docs.google.com/spreadsheets/d/1vE9u6qiubddBEANeApPj8yvYU57hkKmMCBynCqvNsv8/edit?usp=sharing"
+    }
+  }
+]
